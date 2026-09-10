@@ -4,22 +4,23 @@ Documentación práctica, diagramas de arquitectura y evidencias en video de lab
 ---
 ## Tabla de Contenidos por Módulo
 ### Modulo Fundamentos De La Nube
-- ✅ [Lab 11 Introducción A Amazon Ec2](./1-modulo-fundamentos-de-la-nube/1-lab-11-introducción-a-Amazon-EC2/README.md)
+- ✅ [Lab 11 Introduccion A Amazon Ec2](./1-modulo-fundamentos-de-la-nube/1-lab-11-introduccion-a-Amazon-EC2/README.md)
 
 ### Modulo Linux
-- ✅ [Lab 225 227 Línea De Comandos](./2-modulo-linux/1-lab-225-227-línea-de-comandos/README.md)
+- ✅ [Lab 225 227 Linea De Comandos](./2-modulo-linux/1-lab-225-227-linea-de-comandos/README.md)
+- ✅ [Lab 249 El Bash Shell](./2-modulo-linux/10-lab-249-el-bash-shell/README.md)
 - ⏳ *(En construcción)* Lab 251 Scripts Del Shell
-- ⏳ *(En construcción)* Lab 243 Administración Del Software
-- ⏳ *(En construcción)* Lab 245 Administración De Archivos De Registro
-- ⏳ *(En construcción)* Lab 253 Desafío Scripting De Shell
+- ⏳ *(En construcción)* Lab 243 Administracion Del Software
+- ⏳ *(En construcción)* Lab 245 Administracion De Archivos De Registro
+- ⏳ *(En construcción)* Lab 253 Desafio Scripting De Shell
 - ✅ [Lab 229 Usuarios Y Grupos](./2-modulo-linux/2-lab-229-usuarios-y-grupos/README.md)
-- ✅ [Lab 231 Edición De Archivos](./2-modulo-linux/3-lab-231-edición-de-archivos/README.md)
+- ✅ [Lab 231 Edicion De Archivos](./2-modulo-linux/3-lab-231-edicion-de-archivos/README.md)
 - ✅ [Lab 233 Trabajo Con El Sistema De Archivos](./2-modulo-linux/4-lab-233-trabajo-con-el-sistema-de-archivos/README.md)
 - ✅ [Lab 235 Trabajo Con Archivos](./2-modulo-linux/5-lab-235-Trabajo-con-archivos/README.md)
-- ✅ [Lab 237 Administración De Los Permisos De Archivos](./2-modulo-linux/6-lab-237-administración-de-los-permisos-de-archivos/README.md)
-- ⏳ *(En construcción)* Lab 239 Procesos Administrativos
-- ⏳ *(En construcción)* Lab 241 Servicios Administrativos
-- ⏳ *(En construcción)* Lab 249 El Bash Shell
+- ✅ [Lab 237 Administracion De Los Permisos De Archivos](./2-modulo-linux/6-lab-237-administracion-de-los-permisos-de-archivos/README.md)
+- ⏳ *(En construcción)* Lab 247 Trabajo Con Comandos
+- ✅ [Lab 239 Procesos Administrativos](./2-modulo-linux/8-lab-239-procesos-administrativos/README.md)
+- ✅ [Lab 241 Servicios Administrativos](./2-modulo-linux/9-lab-241-servicios-administrativos/README.md)
 
 ### Modulo Redes
 - ⏳ *(En construcción)* Lab 261 Direcciones Ip Publicas Privadas
