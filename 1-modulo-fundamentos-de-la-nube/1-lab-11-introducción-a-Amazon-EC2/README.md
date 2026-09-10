@@ -1,10 +1,8 @@
-# Lab 11: Lanzamiento, Modificación y Supervisión de una Instancia Amazon EC2
+# Lab 11 Lanzamiento, Modificación y Supervisión de una Instancia Amazon EC2
 
 ## Objetivo del Laboratorio
 
 Implementar y gestionar un servidor web Apache en **Amazon EC2** mediante la Consola de Administración de AWS, configurando la protección de terminación, personalizando las reglas de red mediante Grupos de Seguridad (Security Groups) y analizando la supervisión del sistema con Amazon CloudWatch.
-
----
 
 ## Servicios y Tecnologías Utilizadas
 
@@ -13,8 +11,6 @@ Implementar y gestionar un servidor web Apache en **Amazon EC2** mediante la Con
 - **Sistema Operativo:** Amazon Linux 2023 AMI
 - **Scripting / User Data:** Bash (Aprovisionamiento automatizado de Apache `httpd`)
 - **Monitoreo:** Amazon CloudWatch (Métricas de estado y accesibilidad)
-
----
 
 ## Arquitectura y Flujo de Trabajo
 
@@ -80,7 +76,7 @@ _Figura 3: Acceso web fallido._
 
 - Tipo: HTTP
 - Puerto: 80
-- Origen: Anywhere-IPv4 (0.0.0.0/0)
+- Origen: `Anywhere-IPv4 (0.0.0.0/0)`
 
 ![Figura 4](./images/4.png)
 _Figura 4: Modificación del Security Group._
@@ -92,7 +88,7 @@ _Figura 5: Carga exitosa del mensaje "Hello From Your Web Server!"._
 
 - **Detención:** Se detuvo la instancia (Stopped) para realizar cambios de hardware.
 
-- **Cambio de Tipo:** Se modificó la capacidad de la instancia escalando de t3.micro a t3.small (duplicando la memoria RAM).
+- **Cambio de Tipo:** Se modificó la capacidad de la instancia escalando de `t3.micro` a `t3.small` (duplicando la memoria RAM).
 
 ![Figura 6](./images/7.png)
 _Figura 6: Cambio del tipo de instancia a t3.small._
@@ -108,7 +104,7 @@ _Figura 7: Cambio del volumen de la instancia._
 
 - **Prueba de Fallo:** Se intentó terminar la instancia directamente desde el menú, generando un error intencional debido a la marca de Protección de Terminación activada en la Tarea 1.
 
-- **Desactivación y Eliminación:** Se deshabilitó manualmente la regla Change Termination Protection y se procedió a terminar (Terminate) la instancia exitosamente.
+- **Desactivación y Eliminación:** Se deshabilitó manualmente la regla `Change Termination Protection` y se procedió a terminar (Terminate) la instancia exitosamente.
 
 ![Figura 8](./images/8.png)
 _Figura 8: Error al tratar de terminar la instancia._
@@ -121,7 +117,7 @@ Mira el despliegue práctico completo, la resolución de fallos en vivo y la man
 
 ## Aprendizajes Clave
 
-- **Diagnóstico sin SSH:** Get Instance Screenshot permite visualizar fallos de arranque o Kernel Panic sin depender de accesos remotos.
+- **Diagnóstico sin SSH:** `Get Instance Screenshot` permite visualizar fallos de arranque o Kernel Panic sin depender de accesos remotos.
 
 - **Comportamiento Stateful:** Los Security Groups actúan como firewalls a nivel de instancia; sin reglas de entrada explícitas para el Puerto 80, el tráfico HTTP es denegado por defecto.
 

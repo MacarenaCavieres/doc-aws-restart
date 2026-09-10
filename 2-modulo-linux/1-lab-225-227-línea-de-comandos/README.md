@@ -1,13 +1,12 @@
-# Lab 225 - 227: Linux Fundamentals: Manual Pages, System Inspection & Bash Productivity
+# Lab 225 - 227 Linux Fundamentals: Manual Pages, System Inspection & Bash Productivity
 
-![Linux](https://img.shields.io/badge/OS-Amazon%20Linux%202-orange?logo=amazon)
+![Linux](https://img.shields.io/badge/OS-Amazon%20Linux%202023-orange?logo=amazon)
 ![Bash](https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnu-bash&logoColor=white)
+![AWS](https://img.shields.io/badge/Environment-AWS%20EC2-232F3E?logo=amazon-aws)
 
 ## Descripción General
 
 Este repositorio documenta la ejecución práctica de dos laboratorios esenciales de fundamentos de Linux sobre una instancia **Amazon EC2 (Amazon Linux)** accedida mediante SSH. El objetivo es dominar el uso de la documentación nativa del sistema (`man pages`), la inspección de variables/usuarios y la optimización del flujo de trabajo en la terminal mediante atajos de la shell Bash.
-
----
 
 ## Objetivos de Aprendizaje
 
@@ -15,8 +14,6 @@ Este repositorio documenta la ejecución práctica de dos laboratorios esenciale
 - **Documentación del sistema:** Navegación, búsqueda e interpretación de encabezados en páginas `man`.
 - **Información del sistema y sesión:** Uso de comandos para inspeccionar identidad, tiempo de actividad, usuarios activos y zonas horarias.
 - **Productividad en Bash:** Reutilización de comandos mediante autocompletado (`Tab`), búsqueda inversa (`Ctrl + R`), historial (`history`) y expansión de comandos (`!!`).
-
----
 
 ## Laboratorio 1: Exploración de Páginas de Manual (`man`)
 
@@ -40,7 +37,7 @@ man man
 | **EXAMPLES**    | Casos de uso prácticos de ejecución.                                    |
 | **SEE ALSO**    | Comandos o manuales relacionados.                                       |
 
-Navegación: Se utilizaron las teclas flecha arriba/abajo para desplazarse y q para salir del manual.
+Navegación: Se utilizaron las teclas `flecha arriba/abajo` para desplazarse y q para salir del manual.
 
 ## Inspección del Sistema y Atajos de Bash (Lab 227)
 
@@ -97,8 +94,14 @@ date
 ![Figura 1](./images/1.png)
 _Figura 1: Comandos ejecutados en la shell de linux_
 
+## Evidencia en Video
+
+Mira el despliegue práctico completo, la resolución de fallos en vivo y la manipulación de la consola en mi canal de YouTube:
+
+# [![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=FLSAyp-bGRI)
+
 ## Conclusiones y Aplicación Práctica
 
-- **Resolución de problemas (Troubleshooting):** Comandos como uptime, who, e id son fundamentales para auditar accesos e investigar comportamientos anómalos en servidores en la nube.
+- **Resolución de problemas (Troubleshooting):** Comandos como `uptime`, `who`, e `id` son fundamentales para auditar accesos e investigar comportamientos anómalos en servidores en la nube.
 
-- **Eficiencia operativa:** La búsqueda en el historial (Ctrl + R) y la expansión !! aceleran significativamente la administración diaria de sistemas Linux mediante CLI.
+- **Eficiencia operativa:** La búsqueda en el historial (`Ctrl + R`) y la expansión `!!` aceleran significativamente la administración diaria de sistemas Linux mediante CLI.
