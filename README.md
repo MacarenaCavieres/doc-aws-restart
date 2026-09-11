@@ -9,9 +9,9 @@ Documentación práctica, diagramas de arquitectura y evidencias en video de lab
 ### Modulo Linux
 - ✅ [Lab 225 227 Linea De Comandos](./2-modulo-linux/1-lab-225-227-linea-de-comandos/README.md)
 - ✅ [Lab 249 El Bash Shell](./2-modulo-linux/10-lab-249-el-bash-shell/README.md)
-- ⏳ *(En construcción)* Lab 251 Scripts Del Shell
-- ⏳ *(En construcción)* Lab 243 Administracion Del Software
-- ⏳ *(En construcción)* Lab 245 Administracion De Archivos De Registro
+- ✅ [Lab 251 Scripts Del Shell](./2-modulo-linux/11-lab-251-scripts-del-shell/README.md)
+- ✅ [Lab 243 Administracion Del Software](./2-modulo-linux/12-lab-243-administracion-del-software/README.md)
+- ✅ [Lab 245 Administracion De Archivos De Registro](./2-modulo-linux/13-lab-245-administracion-de-archivos-de-registro/README.md)
 - ⏳ *(En construcción)* Lab 253 Desafio Scripting De Shell
 - ✅ [Lab 229 Usuarios Y Grupos](./2-modulo-linux/2-lab-229-usuarios-y-grupos/README.md)
 - ✅ [Lab 231 Edicion De Archivos](./2-modulo-linux/3-lab-231-edicion-de-archivos/README.md)
