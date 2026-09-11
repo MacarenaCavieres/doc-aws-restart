@@ -1,4 +1,9 @@
-# Revisión de Archivos de Registro Seguros y Auditoría de Inicios de Sesión en Linux
+# Lab 245 Revisión de Archivos de Registro Seguros y Auditoría de Inicios de Sesión en Linux
+
+![Linux](https://img.shields.io/badge/OS-Amazon%20Linux%202-orange?logo=amazon)
+![Bash](https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnu-bash&logoColor=white)
+![AWS](https://img.shields.io/badge/Environment-AWS%20EC2-232F3E?logo=amazon-aws)
+![Tool](https://img.shields.io/badge/Tool-Text%20Processing-4D4D4D?logo=windowsterminal&logoColor=white)
 
 ## Descripción General
 

@@ -1,5 +1,10 @@
 # Lab 243 Gestión de Paquetes con YUM e Instalación de AWS CLI en Linux
 
+![Linux](https://img.shields.io/badge/OS-Amazon%20Linux%202-orange?logo=amazon)
+![Bash](https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnu-bash&logoColor=white)
+![AWS](https://img.shields.io/badge/Environment-AWS%20EC2-232F3E?logo=amazon-aws)
+![Tool](https://img.shields.io/badge/Tool-Text%20Processing-4D4D4D?logo=windowsterminal&logoColor=white)
+
 ## Descripción General
 
 Este laboratorio aborda la administración de paquetes en sistemas basados en Red Hat / Amazon Linux 2 utilizando el gestor de paquetes YUM. Se cubren tareas de actualización del sistema, aplicación de parches de seguridad, reversión de transacciones mediante el historial de YUM e instalación y verificación de la herramienta AWS CLI v2.

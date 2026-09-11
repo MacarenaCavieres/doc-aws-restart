@@ -5,6 +5,14 @@ OUTPUT_FILE = "README.md"
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
+def get_sort_key(folder_name):
+    # Extrae el numero al inicio de la carpeta (ej. '1' de '1-lab225' o '10' de '10-lab-...')
+    match = re.match(r"^(\d+)", folder_name)
+    if match:
+        return int(match.group(1))
+    return float("inf")  # Si no tiene numero al inicio, lo manda al final
+
+
 def clean_name(folder_name):
     cleaned = re.sub(r"^\d+-", "", folder_name)
     cleaned = cleaned.replace("-", " ").title()
@@ -24,7 +32,8 @@ def generate_global_readme():
     markdown_content.append("---\n")
     markdown_content.append("## Tabla de Contenidos por Módulo\n")
 
-    items = sorted(os.listdir(BASE_DIR))
+    # Ordenamiento natural aplicado a los modulos
+    items = sorted(os.listdir(BASE_DIR), key=get_sort_key)
     modules = [
         f
         for f in items
@@ -41,13 +50,13 @@ def generate_global_readme():
         else:
             markdown_content.append(f"### {mod_title}\n")
 
-        labs = sorted(
-            [
-                l
-                for l in os.listdir(mod_path)
-                if os.path.isdir(os.path.join(mod_path, l)) and "lab" in l.lower()
-            ]
-        )
+        # Ordenamiento natural aplicado a los laboratorios
+        raw_labs = [
+            l
+            for l in os.listdir(mod_path)
+            if os.path.isdir(os.path.join(mod_path, l)) and "lab" in l.lower()
+        ]
+        labs = sorted(raw_labs, key=get_sort_key)
 
         if not labs:
             markdown_content.append(
@@ -83,7 +92,7 @@ def generate_global_readme():
     with open(output_path, "w", encoding="utf-8") as f:
         f.writelines(markdown_content)
 
-    print(f"¡README.md global actualizado exitosamente desde Windows!")
+    print("¡README.md global actualizado exitosamente desde Windows!")
 
 
 if __name__ == "__main__":

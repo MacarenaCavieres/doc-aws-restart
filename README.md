@@ -8,19 +8,19 @@ Documentación práctica, diagramas de arquitectura y evidencias en video de lab
 
 ### Modulo Linux
 - ✅ [Lab 225 227 Linea De Comandos](./2-modulo-linux/1-lab-225-227-linea-de-comandos/README.md)
-- ✅ [Lab 249 El Bash Shell](./2-modulo-linux/10-lab-249-el-bash-shell/README.md)
-- ✅ [Lab 251 Scripts Del Shell](./2-modulo-linux/11-lab-251-scripts-del-shell/README.md)
-- ✅ [Lab 243 Administracion Del Software](./2-modulo-linux/12-lab-243-administracion-del-software/README.md)
-- ✅ [Lab 245 Administracion De Archivos De Registro](./2-modulo-linux/13-lab-245-administracion-de-archivos-de-registro/README.md)
-- ⏳ *(En construcción)* Lab 253 Desafio Scripting De Shell
 - ✅ [Lab 229 Usuarios Y Grupos](./2-modulo-linux/2-lab-229-usuarios-y-grupos/README.md)
 - ✅ [Lab 231 Edicion De Archivos](./2-modulo-linux/3-lab-231-edicion-de-archivos/README.md)
 - ✅ [Lab 233 Trabajo Con El Sistema De Archivos](./2-modulo-linux/4-lab-233-trabajo-con-el-sistema-de-archivos/README.md)
 - ✅ [Lab 235 Trabajo Con Archivos](./2-modulo-linux/5-lab-235-Trabajo-con-archivos/README.md)
 - ✅ [Lab 237 Administracion De Los Permisos De Archivos](./2-modulo-linux/6-lab-237-administracion-de-los-permisos-de-archivos/README.md)
-- ⏳ *(En construcción)* Lab 247 Trabajo Con Comandos
+- ✅ [Lab 247 Trabajo Con Comandos](./2-modulo-linux/7-lab-247-Trabajo-con-comandos/README.md)
 - ✅ [Lab 239 Procesos Administrativos](./2-modulo-linux/8-lab-239-procesos-administrativos/README.md)
 - ✅ [Lab 241 Servicios Administrativos](./2-modulo-linux/9-lab-241-servicios-administrativos/README.md)
+- ✅ [Lab 249 El Bash Shell](./2-modulo-linux/10-lab-249-el-bash-shell/README.md)
+- ✅ [Lab 251 Scripts Del Shell](./2-modulo-linux/11-lab-251-scripts-del-shell/README.md)
+- ✅ [Lab 243 Administracion Del Software](./2-modulo-linux/12-lab-243-administracion-del-software/README.md)
+- ✅ [Lab 245 Administracion De Archivos De Registro](./2-modulo-linux/13-lab-245-administracion-de-archivos-de-registro/README.md)
+- ✅ [Lab 253 Desafio Scripting De Shell](./2-modulo-linux/14-lab-253-desafio-scripting-de-shell/README.md)
 
 ### Modulo Redes
 - ⏳ *(En construcción)* Lab 261 Direcciones Ip Publicas Privadas
