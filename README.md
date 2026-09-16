@@ -42,8 +42,8 @@ Documentación práctica, diagramas de arquitectura y evidencias en video de lab
 - ✅ [Laboratorios](./5-modulo-python/laboratorios/README.md)
 
 ### Modulo Bases De Datos
-- ⏳ *(En construcción)* Lab 268 Operaciones De Tabla De Bases De Datos
-- ⏳ *(En construcción)* Lab 269 Insertar Actualizar Y Eliminar Datos
+- ✅ [Lab 268 Operaciones De Tabla De Bases De Datos](./6-modulo-bases-de-datos/1-lab-268-operaciones-de-tabla-de-bases-de-datos/README.md)
+- ✅ [Lab 269 Insertar Actualizar Y Eliminar Datos](./6-modulo-bases-de-datos/2-lab-269-insertar-actualizar-y-eliminar-datos/README.md)
 
 ---
 ### Tecnologías Utilizadas
