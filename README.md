@@ -39,7 +39,11 @@ Documentación práctica, diagramas de arquitectura y evidencias en video de lab
 - ✅ [Lab 281 Supervisar Una Instancia Ec2](./4-modulo-seguridad/6-lab-281-supervisar-una-instancia-ec2/README.md)
 
 ### Modulo Python
- - *No hay laboratorios registrados aún en este módulo.*
+- ✅ [Laboratorios](./5-modulo-python/laboratorios/README.md)
+
+### Modulo Bases De Datos
+- ⏳ *(En construcción)* Lab 268 Operaciones De Tabla De Bases De Datos
+- ⏳ *(En construcción)* Lab 269 Insertar Actualizar Y Eliminar Datos
 
 ---
 ### Tecnologías Utilizadas
