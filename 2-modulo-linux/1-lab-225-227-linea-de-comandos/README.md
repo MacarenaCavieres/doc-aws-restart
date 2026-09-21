@@ -94,11 +94,12 @@ date
 ![Figura 1](./images/1.png)
 _Figura 1: Comandos ejecutados en la shell de linux_
 
+<!--
 ## Evidencia en Video
 
 Mira el despliegue práctico completo, la resolución de fallos en vivo y la manipulación de la consola en mi canal de YouTube:
-
-# [![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=FLSAyp-bGRI)
+\
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=FLSAyp-bGRI) -->
 
 ## Conclusiones y Aplicación Práctica
 

@@ -20,7 +20,7 @@ Implementar y gestionar un servidor web Apache en **Amazon EC2** mediante la Con
           │ (Tráfico HTTP - Puerto 80)
           ▼
 ┌────────────────────────────────────────────────────────┐
-│  Security Group: Web Server security group            │
+│  Security Group: Web Server security group             │
 │  Inbound Rule: Allow HTTP (80) from Any (0.0.0.0/0)    │
 └─────────────────────────┬──────────────────────────────┘
                           │
@@ -109,11 +109,11 @@ _Figura 7: Cambio del volumen de la instancia._
 ![Figura 8](./images/8.png)
 _Figura 8: Error al tratar de terminar la instancia._
 
-## Evidencia en Video
+<!-- ## Evidencia en Video
 
 Mira el despliegue práctico completo, la resolución de fallos en vivo y la manipulación de la consola en mi canal de YouTube:
-
-# [![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=W-tGboDYI6o)
+\
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=W-tGboDYI6o) -->
 
 ## Aprendizajes Clave
 

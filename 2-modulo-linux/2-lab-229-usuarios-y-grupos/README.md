@@ -128,11 +128,11 @@ _Figura 4: Comandos para crear usuarios_
 
 _Demostración práctica del principio de mínimo privilegio en Linux: los usuarios estándar no tienen permisos de escritura en los directorios home ajenos._
 
-## Evidencia en Video
+<!-- ## Evidencia en Video
 
 Mira el procedimiento práctico paso a paso en mi canal de YouTube:
-
-# [![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=99c_BAeI58k)
+\
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=99c_BAeI58k) -->
 
 ## Aprendizajes Clave
 
