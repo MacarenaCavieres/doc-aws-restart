@@ -44,6 +44,10 @@ Documentación práctica, diagramas de arquitectura y evidencias en video de lab
 ### Modulo Bases De Datos
 - ✅ [Lab 268 Operaciones De Tabla De Bases De Datos](./6-modulo-bases-de-datos/1-lab-268-operaciones-de-tabla-de-bases-de-datos/README.md)
 - ✅ [Lab 269 Insertar Actualizar Y Eliminar Datos](./6-modulo-bases-de-datos/2-lab-269-insertar-actualizar-y-eliminar-datos/README.md)
+- ✅ [Lab 270 Seleccion De Datos](./6-modulo-bases-de-datos/3-lab-270-seleccion-de-datos/README.md)
+- ⏳ *(En construcción)* Lab 271 Realizacion De Una Busqueda Condicional
+- ⏳ *(En construcción)* Lab 272 Trabajar Con Funciones
+- ⏳ *(En construcción)* Lab 273 Organizacion De Datos
 
 ---
 ### Tecnologías Utilizadas
