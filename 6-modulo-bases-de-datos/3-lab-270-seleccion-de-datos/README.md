@@ -7,7 +7,7 @@
 
 ## Descripción General
 
-En este laboratorio práctico se ejecutaron operaciones de consulta y filtrado sobre una base de datos relacional MySQL en AWS. Para realizar las actividades, se accedió a la instancia *Command Host* mediante **AWS Systems Manager Session Manager** y se utilizaron sentencias de lenguaje de consulta (`SELECT`), funciones de agregación (`COUNT`), alias de columnas (`AS`), ordenamiento (`ORDER BY`) y filtrado avanzado mediante operadores lógicos y de comparación (`WHERE`, `>`, `<`, `=`, `AND`).
+En este laboratorio práctico se ejecutaron operaciones de consulta y filtrado sobre una base de datos relacional MySQL en AWS. Para realizar las actividades, se accedió a la instancia _Command Host_ mediante **AWS Systems Manager Session Manager** y se utilizaron sentencias de lenguaje de consulta (`SELECT`), funciones de agregación (`COUNT`), alias de columnas (`AS`), ordenamiento (`ORDER BY`) y filtrado avanzado mediante operadores lógicos y de comparación (`WHERE`, `>`, `<`, `=`, `AND`).
 
 ## Objetivos del Laboratorio
 
@@ -23,15 +23,15 @@ Se estableció conexión con la instancia _Command Host_ mediante **AWS Systems 
 
 ## Tarea 2: Consultar la Base de Datos World
 
-Previo a la ejecución de consultas, se realizó la conexión al *Command Host* mediante Session Manager, se elevaron privilegios a usuario root (`sudo su`) y se ingresó al motor MySQL (`mysql -u root --password='re:St@rt!9'`).
+Previo a la ejecución de consultas, se realizó la conexión al _Command Host_ mediante Session Manager, se elevaron privilegios a usuario root (`sudo su`) y se ingresó al motor MySQL (`mysql -u root --password='re:St@rt!9'`).
 
-1) Inspección de las bases de datos disponibles en la instancia:
+1. Inspección de las bases de datos disponibles en la instancia:
 
 ```sql
 SHOW DATABASES;
 ```
 
-2) Consulta de la totalidad de registros almacenados en la tabla `country`:
+2. Consulta de la totalidad de registros almacenados en la tabla `country`:
 
 ```sql
 SELECT * FROM world.country;
@@ -40,18 +40,19 @@ SELECT * FROM world.country;
 ![Figura 1](./images/1.png)
 _Figura 1: Captura de pantalla de los comandos pasos 1 y 2_
 
-3) Conteo de filas de la tabla mediante la función agregada `COUNT()`:
+3. Conteo de filas de la tabla mediante la función agregada `COUNT()`:
 
 ```sql
 SELECT COUNT(*) FROM world.country;
 ```
 
-4) Inspección de la estructura y propiedades de las columnas en la tabla `country`:
+4. Inspección de la estructura y propiedades de las columnas en la tabla `country`:
+
 ```sql
 SHOW COLUMNS FROM world.country;
 ```
 
-5) Proyección de campos específicos (`Name`, `Capital`, `Region`, `SurfaceArea`, `Population`) desde la tabla `country`:
+5. Proyección de campos específicos (`Name`, `Capital`, `Region`, `SurfaceArea`, `Population`) desde la tabla `country`:
 
 ```sql
 SELECT Name, Capital, Region, SurfaceArea, Population FROM world.country;
@@ -60,13 +61,14 @@ SELECT Name, Capital, Region, SurfaceArea, Population FROM world.country;
 ![Figura 2](./images/2.png)
 _Figura 2: Captura de pantalla de los comandos de los pasos del 3 al 5_
 
-6) Uso de alias de columna mediante la opción `AS` para renombrar campos en el resultado:
+6. Uso de alias de columna mediante la opción `AS` para renombrar campos en el resultado:
 
 ```sql
 SELECT Name, Capital, Region, SurfaceArea AS "Surface Area", Population FROM world.country;
 ```
 
-7) Ordenamiento de resultados en orden ascendente según el campo `Population`:
+7. Ordenamiento de resultados en orden ascendente según el campo `Population`:
+
 ```sql
 SELECT Name, Capital, Region, SurfaceArea AS "Surface Area", Population FROM world.country ORDER BY Population;
 ```
@@ -74,7 +76,7 @@ SELECT Name, Capital, Region, SurfaceArea AS "Surface Area", Population FROM wor
 ![Figura 3](./images/3.png)
 _Figura 3: Captura de pantalla de los comandos del paso 7_
 
-8) Ordenamiento de resultados en orden descendente mediante la opción `DESC`:
+8. Ordenamiento de resultados en orden descendente mediante la opción `DESC`:
 
 ```sql
 SELECT Name, Capital, Region, SurfaceArea AS "Surface Area", Population FROM world.country ORDER BY Population DESC;
@@ -83,13 +85,13 @@ SELECT Name, Capital, Region, SurfaceArea AS "Surface Area", Population FROM wor
 ![Figura 4](./images/4.png)
 _Figura 4: Captura de pantalla de los comandos del paso 8_
 
-9) Aplicación de filtrado simple mediante la cláusula `WHERE` para listar países con una población superior a 50 000 000:
+9. Aplicación de filtrado simple mediante la cláusula `WHERE` para listar países con una población superior a 50 000 000:
 
 ```sql
 SELECT Name, Capital, Region, SurfaceArea AS "Surface Area", Population FROM world.country WHERE Population > 50000000 ORDER BY Population DESC;
 ```
 
-10) Construcción de filtros con múltiples condiciones utilizando el operador lógico `AND` para evaluar un rango poblacional entre 50 000 000 y 100 000 000:
+10. Construcción de filtros con múltiples condiciones utilizando el operador lógico `AND` para evaluar un rango poblacional entre 50 000 000 y 100 000 000:
 
 ```sql
 SELECT Name, Capital, Region, SurfaceArea AS "Surface Area", Population FROM world.country WHERE Population > 50000000 AND Population < 100000000 ORDER BY Population DESC;
@@ -99,6 +101,7 @@ SELECT Name, Capital, Region, SurfaceArea AS "Surface Area", Population FROM wor
 _Figura 5: Captura de pantalla de los comandos de los pasos 9 y 10_
 
 ## Desafío: Consulta de Registros Específicos
+
 Resolución de la consulta orientada a identificar países pertenecientes al Sur de Europa (`Southern Europe`) con una población superior a 50 000 000:
 
 ```sql
@@ -110,17 +113,12 @@ _Figura 6: Captura de pantalla de los comandos del desafío_
 
 ## Resumen de Recursos y Componentes
 
-| Servicio / Recurso | Nombre del Componente | Descripción y Función Técnica |
-| :--- | :--- | :--- |
-| **Amazon EC2** | `Command Host` | Instancia Linux cliente conectada mediante Session Manager para ejecutar el cliente MySQL. |
-| **AWS Systems Manager** | `Session Manager` | Servicio de gestión de acceso seguro a la instancia EC2 sin apertura de puertos SSH públicos. |
-| **MySQL Engine** | Base de Datos `world` | Base de datos relacional utilizada para la ejecución de consultas DQL (*Data Query Language*). |
-| **MySQL Engine** | Tabla `country` | Tabla sobre la cual se aplicaron proyecciones, alias, ordenamientos y filtros lógicos. |
-
-## Evidencia en Video
-
-Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
-[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=djZCRbOmph0)
+| Servicio / Recurso      | Nombre del Componente | Descripción y Función Técnica                                                                  |
+| :---------------------- | :-------------------- | :--------------------------------------------------------------------------------------------- |
+| **Amazon EC2**          | `Command Host`        | Instancia Linux cliente conectada mediante Session Manager para ejecutar el cliente MySQL.     |
+| **AWS Systems Manager** | `Session Manager`     | Servicio de gestión de acceso seguro a la instancia EC2 sin apertura de puertos SSH públicos.  |
+| **MySQL Engine**        | Base de Datos `world` | Base de datos relacional utilizada para la ejecución de consultas DQL (_Data Query Language_). |
+| **MySQL Engine**        | Tabla `country`       | Tabla sobre la cual se aplicaron proyecciones, alias, ordenamientos y filtros lógicos.         |
 
 ## Conclusiones del Laboratorio
 

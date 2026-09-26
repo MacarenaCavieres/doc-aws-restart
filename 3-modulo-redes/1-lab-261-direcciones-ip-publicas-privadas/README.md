@@ -73,9 +73,9 @@ Respecto a la consulta técnica sobre utilizar un rango de IP público (ejemplo 
 
 - **Impacto Técnico:** Si se asigna un rango público ruteable a una VPC, la infraestructura interna asumirá que esas IP son locales. En consecuencia, las instancias dentro de la VPC no podrán conectarse a los servidores reales de Internet que utilicen ese rango de direcciones público (`12.0.0.0/8`), debido a que el enrutamiento interno de la VPC interceptará el tráfico.
 - **Buena Práctica (RFC 1918):** Siempre se deben utilizar los bloques de direcciones IP privadas reservados para VPCs:
-    - `10.0.0.0/8`
-    - `172.16.0.0/12`
-    - `192.168.0.0/16`
+  - `10.0.0.0/8`
+  - `172.16.0.0/12`
+  - `192.168.0.0/16`
 
 ## Resumen de Comandos y Servicios
 
@@ -85,11 +85,6 @@ Respecto a la consulta técnica sobre utilizar un rango de IP público (ejemplo 
 | `Amazon EC2`       | Elastic IP (EIP)    | Dirección IP pública estática reservada para la cuenta de AWS y asociada a una instancia. |
 | `AWS VPC`          | IPv4 CIDR Block     | Rango de direcciones de red privadas asignadas a la VPC bajo el estándar RFC 1918.        |
 | `Internet Gateway` | IGW                 | Componente de VPC que realiza la traducción de direcciones entre IP privada y pública.    |
-
-## Evidencia en Video
-
-Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
-[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=x01lHGwAUbQ)
 
 ## Conclusiones del Laboratorio
 

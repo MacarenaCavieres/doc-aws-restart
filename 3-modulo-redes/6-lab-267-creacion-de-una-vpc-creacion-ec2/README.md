@@ -28,11 +28,11 @@ Se utilizó la opción **VPC and more** para aprovisionar la infraestructura ini
 - **Bloque CIDR IPv4:** `10.0.0.0/16`
 - **Zonas de Disponibilidad (AZs):** 1 (`us-west-2a`)
 - **Subredes:**
-    - **Pública (`Public Subnet 1`):** `10.0.0.0/24`
-    - **Privada (`Private Subnet 1`):** `10.0.1.0/24`
+  - **Pública (`Public Subnet 1`):** `10.0.0.0/24`
+  - **Privada (`Private Subnet 1`):** `10.0.1.0/24`
 - **Puertas de Enlace:**
-    - **Internet Gateway (IGW):** Vinculado a la VPC para el tráfico saliente y entrante de la subred pública.
-    - **NAT Gateway:** Desplegado en la subred pública para ofrecer salida a Internet a los recursos de la subred privada.
+  - **Internet Gateway (IGW):** Vinculado a la VPC para el tráfico saliente y entrante de la subred pública.
+  - **NAT Gateway:** Desplegado en la subred pública para ofrecer salida a Internet a los recursos de la subred privada.
 
 ## Tarea 2: Expansión de Subredes para Alta Disponibilidad
 
@@ -51,11 +51,11 @@ _Figura 2: Diagrama de la VPC_
 Se asociaron explícitamente las nuevas subredes a sus respectivas tablas de enrutamiento para aplicar las políticas de acceso correspondientes:
 
 1. **Tabla de Enrutamiento Pública (`Public Route Table`):**
-    - **Ruta asociada:** `0.0.0.0/0` apuntando al Internet Gateway (IGW).
-    - **Subredes asociadas:** `Public Subnet 1` y `Public Subnet 2`.
+   - **Ruta asociada:** `0.0.0.0/0` apuntando al Internet Gateway (IGW).
+   - **Subredes asociadas:** `Public Subnet 1` y `Public Subnet 2`.
 2. **Tabla de Enrutamiento Privada (`Private Route Table`):**
-    - **Ruta asociada:** `0.0.0.0/0` apuntando al NAT Gateway.
-    - **Subredes asociadas:** `Private Subnet 1` y `Private Subnet 2`.
+   - **Ruta asociada:** `0.0.0.0/0` apuntando al NAT Gateway.
+   - **Subredes asociadas:** `Private Subnet 1` y `Private Subnet 2`.
 
 ## Tarea 4: Creación del Grupo de Seguridad
 
@@ -162,11 +162,6 @@ _Figura 5: Validación web server_
 | **NAT Gateway**      | `Lab VPC NAT`                           | Permite salida a Internet a recursos privados sin exponerlos. |
 | **Security Group**   | `Web Security Group`                    | Controla el tráfico entrante por el puerto 80 TCP.            |
 | **Amazon EC2**       | `Web Server 1`                          | Instancia EC2 que aloja el servidor web Apache y la app PHP.  |
-
-## Evidencia en Video
-
-Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
-[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=yuf3B1ov4Zg)
 
 ## Conclusiones del Laboratorio
 

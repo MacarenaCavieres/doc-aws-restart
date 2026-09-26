@@ -135,11 +135,6 @@ _Figura 3: Limpieza de las tablas y bases de datos_
 | **MySQL Engine**        | Tabla `country`       | Tabla relacional principal estructurada con llaves primarias, valores predeterminados y restricciones de tipo. |
 | **MySQL Engine**        | Tabla `city`          | Tabla auxiliar creada para ejercitar la definición de campos de texto y eliminación de objetos.                |
 
-## Evidencia en Video
-
-Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
-[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=W1F6r7Ny5sU)
-
 ## Conclusiones del Laboratorio
 
 - **Gestión Precisa de Esquemas (DDL)**: El conocimiento de las sentencias `CREATE`, `ALTER` y `DROP` es fundamental para mantener la integridad y la evolución continua del modelo de datos sin necesidad de reconstruir las tablas desde cero.

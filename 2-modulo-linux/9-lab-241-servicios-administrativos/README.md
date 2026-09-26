@@ -75,11 +75,11 @@ Pasos Realizados:
 1. Navegación hacia el servicio **CloudWatch**.
 2. Selección de Paneles (Dashboards) > Paneles automáticos > EC2.
 3. Inspección de los gráficos de métricas:
-    - CPUUtilization: Se observó un pico de consumo correspondiente a la ejecución del script stress.sh (alcanzando promedios de hasta 62.6%).
+   - CPUUtilization: Se observó un pico de consumo correspondiente a la ejecución del script stress.sh (alcanzando promedios de hasta 62.6%).
 
-    - DiskReadBytes / DiskWriteBytes: Lecturas y escrituras en el volumen EBS.
+   - DiskReadBytes / DiskWriteBytes: Lecturas y escrituras en el volumen EBS.
 
-    - NetworkIn / NetworkOut: Tráfico de red entrante y saliente.
+   - NetworkIn / NetworkOut: Tráfico de red entrante y saliente.
 
 4. Ajuste del intervalo de tiempo del panel para reducir la latencia de acumulación de datos (de 5 minutos a intervalos de 1 segundo).
 
@@ -95,12 +95,6 @@ _Figura 3: Paneles de Cloudwatch_
 | `systemctl`     | `stop`        | Detiene la ejecución de un servicio en segundo plano.                               |
 | `top`           | Directa       | Muestra en tiempo real los procesos activos y métricas de CPU/RAM.                  |
 | `./script.sh &` | `&`           | Ejecuta un comando o script en segundo plano (_background_), liberando la terminal. |
-
-## Evidencia en Video
-
-Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube:
-
-# [![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=JbCYbfyTonQ)
 
 ## Aprendizajes Clave
 

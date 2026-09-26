@@ -102,11 +102,6 @@ _Figura 7: Verificación a nivel de flota_
 | **Patch Group**         | `LinuxProd` / `WindowsProd`    | Mecanismo de agrupación lógica basado en etiquetas que asocia instancias con líneas de base específicas.      |
 | **SSM Document**        | `AWS-RunPatchBaseline`         | Documento de comandos ejecutado por Run Command para realizar las tareas de escaneo e instalación de parches. |
 
-## Evidencia en Video
-
-Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
-[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=fawpBkLMUlk)
-
 ## Conclusiones del Laboratorio
 
 - **Estandarización de Flotas Heterogéneas:** AWS Systems Manager Patch Manager simplifica la administración de parches permitiendo gestionar simultáneamente entornos Linux y Windows mediante políticas unificadas.

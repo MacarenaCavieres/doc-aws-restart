@@ -58,11 +58,6 @@ El comando genera un reporte estructurado que incluye el nombre de usuario (User
 | `less`    | Directa       | Paginador de texto para navegar archivos extensos sin cargar todo su contenido en memoria.         |
 | `lastlog` | Directa       | Consulta el archivo `/var/log/lastlog` y muestra el último inicio de sesión de todos los usuarios. |
 
-## Evidencia en Video
-
-Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
-[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=qaYgLfYzWak)
-
 ## Aprendizajes Clave
 
 - **Monitoreo de Autenticación**: El archivo `secure` es la fuente primaria para detectar ataques de fuerza bruta, accesos no autorizados e interacciones con el comando sudo.

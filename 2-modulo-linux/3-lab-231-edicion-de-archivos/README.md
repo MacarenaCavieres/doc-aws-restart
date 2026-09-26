@@ -107,12 +107,6 @@ We are using nano this time! We can simply start typing! No insert mode needed.
 - `Ctrl + O` + `Enter`: Escribir/Guardar los cambios en el archivo (WriteOut).
 - `Ctrl + X`: Salir del editor Nano.
 
-<!-- ### Evidencia en Video
-
-Mira la comparación práctica entre Vim y Nano paso a paso en mi canal de YouTube:
-\
-[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=Evx9qcGCIMw) -->
-
 ## Aprendizajes Clave
 
 - **Vim vs. Nano**: Nano es intuitivo y rápido para ediciones menores debido a su menú visible en pantalla. Vim ofrece una velocidad de edición superior y menor consumo de recursos en servidores headless mediante sus comandos modales.

@@ -79,15 +79,15 @@ Para cumplir con el escenario empresarial de segregación de funciones, se agreg
 Se utilizó la URL de inicio de sesión de la cuenta en ventanas privadas de navegador para autenticar a cada usuario y validar la efectividad de sus políticas de acceso:
 
 1. **Pruebas con `user-1` (S3-Support):**
-    - **Amazon S3:** Acceso exitoso para listar buckets e inspeccionar archivos.
-    - **Amazon EC2:** Acceso denegado con mensaje de no autorización (_You are not authorized to perform this operation_).
+   - **Amazon S3:** Acceso exitoso para listar buckets e inspeccionar archivos.
+   - **Amazon EC2:** Acceso denegado con mensaje de no autorización (_You are not authorized to perform this operation_).
 
 2. **Pruebas con `user-2` (EC2-Support):**
-    - **Amazon EC2:** Acceso exitoso para visualizar las instancias en ejecución. Intento de detener una instancia rechazado con error de autorización.
-    - **Amazon S3:** Acceso denegado para listar buckets (_You don't have permissions to list buckets_).
+   - **Amazon EC2:** Acceso exitoso para visualizar las instancias en ejecución. Intento de detener una instancia rechazado con error de autorización.
+   - **Amazon S3:** Acceso denegado para listar buckets (_You don't have permissions to list buckets_).
 
 3. **Pruebas con `user-3` (EC2-Admin):**
-    - **Amazon EC2:** Acceso exitoso para listar instancias y ejecutar la detención (_Stop Instance_) de la instancia EC2 de prueba.
+   - **Amazon EC2:** Acceso exitoso para listar instancias y ejecutar la detención (_Stop Instance_) de la instancia EC2 de prueba.
 
 ![Figura 6](./images/6.png)
 _Figura 6: Validación de permisos del usuario user-2_
@@ -100,11 +100,6 @@ _Figura 6: Validación de permisos del usuario user-2_
 | **AWS IAM**        | Managed Policies         | Políticas reusables diseñadas por AWS o administradores para aplicar a múltiples identidades.      |
 | **AWS IAM**        | Customer Inline Policies | Políticas de acceso embebidas directamente en un único usuario o grupo para casos específicos.     |
 | **AWS IAM**        | Account Password Policy  | Conjunto de reglas globales que exigen requisitos de complejidad y caducidad para las contraseñas. |
-
-## Evidencia en Video
-
-Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
-[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=tD5HV4qxEx0)
 
 ## Conclusiones del Laboratorio
 

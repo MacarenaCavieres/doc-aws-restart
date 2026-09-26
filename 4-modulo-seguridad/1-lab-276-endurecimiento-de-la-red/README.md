@@ -58,13 +58,13 @@ Para solucionar la vulnerabilidad, se accedió al editor de codigo de la funció
           requests==2.20.0
           ```
 
-    ![Figura 3](./images/4.png)
-    _Figura 3: Configuración inicial_
+  ![Figura 3](./images/4.png)
+  _Figura 3: Configuración inicial_
 
 - **Configuración Remediada (Segura):**
-    ```text
-    requests
-    ```
+  ```text
+  requests
+  ```
 
 ![Figura 4](./images/5.png)
 _Figura 4: Configuración remediada_
@@ -92,11 +92,6 @@ _Figura 5: Hallazgos en estado `Closed`_
 | **AWS Lambda**          | `get-request`                   | Servicio de cómputo sin servidor (Serverless) ejecutando el código de la aplicación.                  |
 | **NVD / NIST**          | National Vulnerability Database | Repositorio estandarizado que provee metadatos y recomendaciones sobre registros CVE.                 |
 | **Python Requirements** | `requirements.txt`              | Archivo de declaración de dependencias utilizado por el entorno de ejecución para instalar librerías. |
-
-## Evidencia en Video
-
-Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
-[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=gZvxLuYUfM0)
 
 ## Conclusiones del Laboratorio
 

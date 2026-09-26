@@ -76,11 +76,6 @@ ls -la /home/$USER/challenge
 | `tee`   | Directa       | Escribe el nuevo valor del contador en `counter.txt` mientras lo muestra en pantalla. |
 | `chmod` | `+x`          | Otorga permisos de ejecución al script de Bash.                                       |
 
-## Evidencia en Video
-
-Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
-[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=YY8_8l5dL34)
-
 ## Aprendizajes Clave
 
 - **Persistencia de Estado**: El uso de archivos auxiliares como `counter.txt` permite conservar variables entre distintas ejecuciones sin depender de procesos secundarios en segundo plano.

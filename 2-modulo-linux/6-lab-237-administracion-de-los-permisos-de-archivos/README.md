@@ -4,13 +4,13 @@
 ![Bash](https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnu-bash&logoColor=white)
 ![AWS](https://img.shields.io/badge/Environment-AWS%20EC2-232F3E?logo=amazon-aws)
 
-## 📌 Descripción General
+## Descripción General
 
 Este laboratorio práctico aborda la administración de seguridad en sistemas de archivos Linux mediante la asignación de propiedad de archivos/directorios (`chown`) a usuarios y grupos específicos, junto con el control de accesos mediante el comando `chmod`. Se ejercita la modificación de permisos utilizando tanto la notación simbólica (`u`, `g`, `o`, `a`) como la notación octal/absoluta (valores numéricos como `764`).
 
 ---
 
-## 🎯 Objetivos del Laboratorio
+## Objetivos del Laboratorio
 
 - Modificar recursivamente la propiedad de usuario y grupo en estructuras de carpetas corporativas con `chown -R`.
 - Administrar permisos de lectura (`r`), escritura (`w`) y ejecución (`x`) en archivos.
@@ -20,7 +20,7 @@ Este laboratorio práctico aborda la administración de seguridad en sistemas de
 
 ---
 
-## 🛠️ Tarea 1: Reasignación de Propiedad y Grupos (`chown`)
+## Tarea 1: Reasignación de Propiedad y Grupos (`chown`)
 
 Se ajustó la estructura de propiedad de la empresa `companyA` para reflejar el organigrama corporativo (CEO, Gerentes de Departamento y sus respectivos grupos de trabajo).
 
@@ -105,12 +105,6 @@ _Figura 3: Comandos ejecutados para la modificación de permisos y asignación d
 | `chmod`      | Absoluto (`764`)  | Establece permisos mediante notación octal: **7** (rwx=4+2+1), **6** (rw-=4+2+0), **4** (r--=4+0+0).        |
 | `ls`         | `-laR`            | Lista en formato largo (`-l`), archivos ocultos (`-a`) de forma recursiva (`-R`).                           |
 | `vi` / `vim` | Directa           | Editor de texto en terminal para crear y modificar archivos del sistema.                                    |
-
-## Evidencia en Video
-
-Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube:
-
-# [![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=ivS0ZlRsWD8)
 
 ## Aprendizajes Clave
 

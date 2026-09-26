@@ -4,6 +4,8 @@
 ![AWS Cloud9](https://img.shields.io/badge/IDE-AWS%20Cloud9-orange.svg)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen.svg)
 
+## Descripción General
+
 Este módulo abarca los fundamentos del lenguaje Python y su aplicación en la automatización de tareas, procesamiento de datos y administración de sistemas dentro del programa AWS re/Start.
 
 ## Resumen del Módulo

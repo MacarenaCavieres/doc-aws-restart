@@ -81,11 +81,6 @@ _Figura 4: CIDRs_
 | `Internet Gateway`   | Componente de red que conecta la VPC a la red pública de Internet.                        | Requisito indispensable para subredes públicas.             |
 | `AWS IP Reservation` | Reserva de 5 direcciones IP por subred por parte de AWS.                                  | Infraestructura interna de enrutamiento, DNS y DHCP.        |
 
-## Evidencia en Video
-
-Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
-[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=UnJb_48wr3c)
-
 ## Conclusiones del Laboratorio
 
 - **Cumplimiento de Requerimientos:** El bloque `/18` proporciona 16,384 direcciones IP, superando el objetivo de 15,000 requeridas por el cliente. La subred `/26` provee 59 direcciones libres, superando las 50 requeridas.

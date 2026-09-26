@@ -95,12 +95,6 @@ _Figura 4: Verificación de las instrucciones crontab_
 | `crontab` | `-e` / `-l`               | **-e**: Edita la tabla de tareas programadas. **-l**: Lista las tareas programadas configuradas.                              |
 | `sed`     | `-e 's/origen/destino/g'` | Editor de flujo para reemplazar o transformar texto utilizando expresiones regulares.                                         |
 
-## Evidencia en Video
-
-Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube:
-
-# [![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=G7MAC66cp0g)
-
 ## Aprendizajes Clave
 
 - **Sintaxis de Cron (`* * * * *`)**: Los campos representan `Minuto (0-59)`, `Hora (0-23)`, `Día del mes (1-31)`, `Mes (1-12)` y `Día de la semana (0-6)`.

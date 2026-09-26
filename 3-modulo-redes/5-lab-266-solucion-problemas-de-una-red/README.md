@@ -104,11 +104,6 @@ _Figura 10: Prueba acceso HTTP_
 | **Security Group Rule (Port 80)** | Red AWS (ENI)             | Permite la entrada de paquetes TCP orientados a servicios web.                      |
 | **Security Group Rule (ICMP)**    | Red AWS (ENI)             | Permite paquetes del protocolo de mensajes de control de Internet para diagnóstico. |
 
-## Evidencia en Video
-
-Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
-[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=MLSY4C3_rTs)
-
 ## Conclusiones del Laboratorio
 
 - **Inbound Rules y Stateful Firewalls**: Aunque un servicio dentro del sistema operativo este ejecutándose correctamente, el tráfico sera descartado en el perímetro de AWS si el Grupo de Seguridad no define explicitamente la regla de entrada.

@@ -112,15 +112,6 @@ _Figura 8: ping a google.com_
 | **Network ACL (NACL)**     | Firewall de Subred       | Control de tráfico a nivel de subred sin seguimiento de estado.                   |
 | **Security Group**         | Firewall de Instancia    | Control de tráfico a nivel de la interfaz de red (ENI) con seguimiento de estado. |
 
-## Evidencia en Video
-
-Mira la ejecución completa de este laboratorio paso a paso en YouTube:
-
-| Parte       | Tema                                                  | Enlace                                                                                                                                              |
-| :---------- | :---------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Parte 1** | Aprovisionamiento de VPC, Subredes e Internet Gateway | [![Ver Parte 1](https://img.shields.io/badge/YouTube-Parte_1-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=Qf3uGwysFZA) |
-| **Parte 2** | Lanzamiento de EC2 y prueba con EC2                   | [![Ver Parte 2](https://img.shields.io/badge/YouTube-Parte_2-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=SNfBxif3gRI) |
-
 ## Conclusiones del Laboratorio
 
 - **Importancia del Enrutamiento Completo**: Para que una instancia en una subred publica tenga acceso a Internet, no basta con asignar una IP publica; debe existir un Internet Gateway adjunto a la VPC y una ruta explícita (`0.0.0.0/0`) en la tabla de enrutamiento asociada.

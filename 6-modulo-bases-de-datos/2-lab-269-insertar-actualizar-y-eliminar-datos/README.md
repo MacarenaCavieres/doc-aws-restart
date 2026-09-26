@@ -128,11 +128,6 @@ _Figura 7: Verificación de la tabla `country` creada_
 | **MySQL Engine**        | Base de Datos `world` | Esquema relacional objeto de las operaciones DML y destino del archivo de respaldo.           |
 | **Linux Shell**         | Archivo `world.sql`   | Script con sentencias SQL predefinidas para la reconstrucción e importación masiva de datos.  |
 
-## Evidencia en Video
-
-Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
-[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=mYvXyr9yRFA)
-
 ## Conclusiones del Laboratorio
 
 - **Impacto de Sentencias DML sin Filtro:** La ejecución de comandos `UPDATE` o `DELETE` sin una cláusula `WHERE` afecta a la totalidad de las filas de una tabla, lo que resalta la importancia de validar las condiciones antes de aplicar modificaciones destructivas.

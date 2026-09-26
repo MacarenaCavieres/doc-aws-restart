@@ -61,9 +61,9 @@ Para proporcionar un punto de acceso público estático y corregir la falla de c
 2. Selección de **Allocate Elastic IP address** manteniendo las opciones por defecto del pool de Amazon.
 3. Selección de la dirección IP Elástica generada y apertura del menú **Actions** -> **Associate Elastic IP address**.
 4. Configuración del mapeo:
-    - **Resource type:** Instance
-    - **Instance:** `Command Host`
-    - **Private IP address:** IP privada primaria asignada a la interfaz `eth0`.
+   - **Resource type:** Instance
+   - **Instance:** `Command Host`
+   - **Private IP address:** IP privada primaria asignada a la interfaz `eth0`.
 5. Confirmación mediante **Associate**.
 
 ## Tarea 3: Verificación de Persistencia
@@ -99,11 +99,6 @@ _Figura 8: Detalles de la instancia con la IP Elástica luego de detenerla y rei
 | `Elastic IP (EIP)`        | Estática / Persistente    | Dirección IPv4 pública fija reservada para la cuenta que no cambia tras reinicios. |
 | `Private IPv4 Address`    | Estática dentro de la VPC | Dirección de red interna que no cambia durante el ciclo de vida de la instancia.   |
 | `ENI (Network Interface)` | Mapeo de Red              | Interfaz virtual a la cual se vincula la dirección IP Elástica.                    |
-
-## Evidencia en Video
-
-Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
-[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=u1Mx79j8J9s)
 
 ## Conclusiones del Laboratorio
 

@@ -90,11 +90,6 @@ El sistema crea automáticamente la compresión dentro de la carpeta `/home/ec2-
 | `date`  | `+%Y_%m_%d`   | Genera una cadena formateada con el año, mes y día actual para timestamps.                             |
 | `tar`   | `-csvpzf`     | Comprime en `.tar.gz` preservando los permisos de archivo originales (`-p`).                           |
 
-## Evidencia en Video
-
-Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
-[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=ouohJOD4lEE)
-
 ## Aprendizajes Clave
 
 - **Estructura Shebang (`#!/bin/bash`)**: Le indica al kernel del sistema operativo qué intérprete debe usar para procesar las instrucciones del archivo.

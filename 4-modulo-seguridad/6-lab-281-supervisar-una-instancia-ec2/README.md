@@ -89,11 +89,6 @@ _Figura 5: Panel de CloudWatch creado_
 | **Amazon CloudWatch** | `LabEC2Dashboard`        | Panel de control gráfico para monitoreo unificado de rendimiento en tiempo real.                  |
 | **Amazon EC2**        | `Stress Test`            | Instancia Linux sometida a sobrecarga computacional simulada mediante la utilidad `stress`.       |
 
-## Evidencia en Video
-
-Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
-[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=bsqoQtlttAI)
-
 ## Conclusiones del Laboratorio
 
 - **Respuesta Automática a Incidentes:** La integración nativa entre CloudWatch Alarms y Amazon SNS permite detectar patrones inusuales de uso de procesador (como minería no autorizada o ejecución de malware) de forma reactiva e inmediata.

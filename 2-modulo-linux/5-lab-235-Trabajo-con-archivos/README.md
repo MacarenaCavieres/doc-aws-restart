@@ -88,12 +88,6 @@ _Figura 2: Comandos ejecutados para redirección `tee` y reubicación_
 | `cat`   | Directa          | Concatena y muestra el contenido completo de un archivo en la consola.                                      |
 | `mv`    | Directa          | Traslada o renombra archivos y directorios entre rutas relativas o absolutas.                               |
 
-## Evidencia en Video
-
-Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube:
-
-# [![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=49dUBARikpw)
-
 ## Aprendizajes Clave
 
 - **Desglose del comando `tar`**: La combinación `-czvf` es el estándar en administración de sistemas Linux para empaquetar y comprimir en un solo paso.

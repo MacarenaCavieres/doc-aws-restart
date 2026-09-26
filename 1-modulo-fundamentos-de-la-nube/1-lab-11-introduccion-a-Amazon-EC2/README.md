@@ -1,8 +1,8 @@
 # Lab 11 Lanzamiento, Modificación y Supervisión de una Instancia Amazon EC2
 
-## Objetivo del Laboratorio
+## Descripción General
 
-Implementar y gestionar un servidor web Apache en **Amazon EC2** mediante la Consola de Administración de AWS, configurando la protección de terminación, personalizando las reglas de red mediante Grupos de Seguridad (Security Groups) y analizando la supervisión del sistema con Amazon CloudWatch.
+En este laboratorio implementamos y gestionamos un servidor web Apache en **Amazon EC2** mediante la Consola de Administración de AWS, configuramos la protección de terminación, personalizamos las reglas de red mediante Grupos de Seguridad (Security Groups) y analizamos la supervisión del sistema con Amazon CloudWatch.
 
 ## Servicios y Tecnologías Utilizadas
 
@@ -108,12 +108,6 @@ _Figura 7: Cambio del volumen de la instancia._
 
 ![Figura 8](./images/8.png)
 _Figura 8: Error al tratar de terminar la instancia._
-
-<!-- ## Evidencia en Video
-
-Mira el despliegue práctico completo, la resolución de fallos en vivo y la manipulación de la consola en mi canal de YouTube:
-\
-[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=W-tGboDYI6o) -->
 
 ## Aprendizajes Clave
 
