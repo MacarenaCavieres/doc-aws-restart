@@ -47,6 +47,9 @@ SELECT sum(Population), avg(Population), max(Population), min(Population), count
 SELECT Region, substring_index(Region, " ", 1) FROM world.country;
 ```
 
+![Figura 1](./images/1.png)
+_Figura 1: Captura de pantalla de los comandos del paso 3 y 4_
+
 5. Uso de `SUBSTRING_INDEX()` dentro de la cláusula `WHERE` para filtrar países cuya región comience con el término `Southern`:
 
 ```sql
@@ -58,6 +61,9 @@ SELECT Name, Region from world.country WHERE substring_index(Region, " ", 1) = "
 ```sql
 SELECT Region FROM world.country WHERE LENGTH(TRIM(Region)) < 10;
 ```
+
+![Figura 2](./images/2.png)
+_Figura 2: Captura de pantalla de los comandos del paso 5 y 6_
 
 7. Uso de la función `DISTINCT()` para eliminar valores duplicados en la lista de regiones filtradas:
 
