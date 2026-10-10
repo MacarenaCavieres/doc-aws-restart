@@ -20,6 +20,9 @@ La arquitectura implementa el principio de mínimo privilegio en red: la instanc
 +------------------+                                              +--------------------+
 ```
 
+![Figura 1](./images/arquitectura-final.jpg)
+_Figura 1: Arquitectura final del lab_
+
 ## Objetivos del Laboratorio
 
 - Crear y configurar un **Security Group** y un **DB Subnet Group** para restringir y aislar el tráfico de la base de datos dentro de la VPC.
@@ -41,8 +44,8 @@ La arquitectura implementa el principio de mínimo privilegio en red: la instanc
    - **Type:** `MySQL/Aurora` (Puerto `3306`).
    - **Source:** Custom -> Seleccionar el **Web Security Group** (asociado a la EC2).
 
-![Figura 1](./images/1.png)
-_Figura 1: Detalles del Security Group_
+![Figura 2](./images/1.png)
+_Figura 2: Detalles del Security Group_
 
 ### 2. Crear el DB Subnet Group
 
@@ -52,8 +55,8 @@ _Figura 1: Detalles del Security Group_
    - **VPC:** `Lab VPC`
 3. Seleccionar las subredes privadas asociadas a dos zonas de disponibilidad (`us-west-2a` y `us-west-2b`) utilizando los bloques CIDR `10.0.1.0/24` y `10.0.3.0/24`.
 
-![Figura 2](./images/3.png)
-_Figura 2: Detalles del Subred Group_
+![Figura 3](./images/3.png)
+_Figura 3: Detalles del Subred Group_
 
 ## Paso 2: Aprovisionar la Instancia Amazon RDS
 
@@ -76,8 +79,8 @@ _Figura 2: Detalles del Subred Group_
    - **Initial database name:** `db_challenge`
    - **Enhanced Monitoring:** Desactivar.
 
-![Figura 3](./images/2.png)
-_Figura 3: Aprovisionamiento de la isntancia de Amazon RDS_
+![Figura 4](./images/2.png)
+_Figura 4: Aprovisionamiento de la isntancia de Amazon RDS_
 
 ## Paso 3: Conexión SSH y Cliente MySQL desde EC2
 
@@ -95,8 +98,8 @@ mysql -h <ENDPOINT_RDS> -P 3306 -u main -p
 USE db_challenge;
 ```
 
-![Figura 4](./images/4.png)
-_Figura 4: Conexión SSH y Cliente desde EC2_
+![Figura 5](./images/4.png)
+_Figura 5: Conexión SSH y Cliente desde EC2_
 
 ## Paso 4: Creación de Esquemas DDL y Modificación DML
 
@@ -132,8 +135,8 @@ INSERT INTO RESTART (student_id, student_name, restart_city, graduation_date) VA
 SELECT * FROM RESTART;
 ```
 
-![Figura 5](./images/5.png)
-_Figura 5: Creación tabla Restart e inserción de datos_
+![Figura 6](./images/5.png)
+_Figura 6: Creación tabla Restart e inserción de datos_
 
 2. Tabla `CLOUD_PRACTITIONER`
    Creación de la tabla de certificaciones:
