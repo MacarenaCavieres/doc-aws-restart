@@ -1,5 +1,3 @@
-<!-- faltan las imagenes -->
-
 # Lab 168 Instalación y Configuración de la AWS CLI v2 en Red Hat Linux
 
 ![AWS CLI](https://img.shields.io/badge/Tool-AWS%20CLI%20v2-232F3E?logo=amazon-aws&logoColor=white)
@@ -39,22 +37,7 @@ En este laboratorio práctico se desplegó e instaló la **AWS Command Line Inte
 - Interactuar con **AWS IAM** mediante la CLI para listar usuarios y recuperar políticas de seguridad.
 - Resolver el desafío técnico extrayendo el documento de política `lab_policy.json` mediante comandos avanzados de la AWS CLI.
 
-## Tarea 1: Conectarse a la Instancia EC2 de Red Hat mediante SSH
-
-1. Descargar la clave privada (`labsuser.pem` o `labsuser.ppk`) y obtener la **IP Pública** de la instancia desde la consola de AWS.
-2. Cambiar los permisos de la clave en entornos UNIX/Linux/macOS:
-
-```bash
-chmod 400 labsuser.pem
-```
-
-3. Conectarse a la instancia mediante SSH o PuTTY
-
-```bash
-ssh -i labsuser.pem ec2-user@<IP_PUBLICA>
-```
-
-## Tarea 2: Instalar la AWS CLI en Red Hat Linux
+## Tarea 1: Instalar la AWS CLI en Red Hat Linux
 
 1. Descargar el paquete de instalación oficial de AWS CLI v2:
 
@@ -82,7 +65,10 @@ aws --version
 
 _Resultado esperado: `aws-cli/2.x.x Python/3.x.x Linux/...`_
 
-## Tarea 3: Observar la Configuración de IAM en la Consola
+![Figura 1](./images/1.png)
+_Figura 1: Captura de los comandos ejecutados en la CLI de la tarea 1_
+
+## Tarea 2: Observar la Configuración de IAM en la Consola
 
 1. Navegar al servicio IAM en la Consola de Administración de AWS.
 
@@ -90,7 +76,10 @@ _Resultado esperado: `aws-cli/2.x.x Python/3.x.x Linux/...`_
 
 3. Inspeccionar las credenciales programáticas asociadas al usuario en la pestaña Security credentials.
 
-## Tarea 4: Configurar la AWS CLI para Conectarse a la Cuenta de AWS
+![Figura 2](./images/2.png)
+_Figura 2: Permisos observados en la consola del cliente `lab_policy`_
+
+## Tarea 3: Configurar la AWS CLI para Conectarse a la Cuenta de AWS
 
 1. Iniciar el asistente de configuración interactivo de la CLI:
 
@@ -104,7 +93,7 @@ aws configure
    - Default region name: us-west-2
    - Default output format: json
 
-## Tarea 5: Consultar IAM con la AWS CLI y Resolución del Desafío
+## Tarea 4: Consultar IAM con la AWS CLI y Resolución del Desafío
 
 1. Verificación Inicial de Usuarios
    Verificar la comunicación exitosa entre la CLI y el endpoint de IAM:
@@ -113,12 +102,18 @@ aws configure
 aws iam list-users
 ```
 
+![Figura 3](./images/3.png)
+_Figura 3: Verificación de usuarios_
+
 2. Desafío Práctico: Extracción de Política en Formato JSON \
    Listar las políticas administradas por el cliente (Customer Managed Policies) en la cuenta local:
 
 ```bash
 aws iam list-policies --scope Local
 ```
+
+![Figura 4](./images/4.png)
+_Figura 4: Lista de las políticas por el cliente_
 
 Obtener la representación en formato JSON del documento `lab_policy` utilizando su ARN y su `DefaultVersionId` (`v1`), redirigiendo la salida hacia el archivo `lab_policy.json`:
 
@@ -131,6 +126,9 @@ Verificar la creación del archivo con el contenido de la política:
 ```bash
 cat lab_policy.json
 ```
+
+![Figura 5](./images/5.png)
+_Figura 5: `lab_policy` en formato JSON y el `cat` de la política_
 
 ## Resumen de Recursos y Componentes
 

@@ -72,13 +72,99 @@ Bienvenido/a a mi catálogo de laboratorios prácticos en **Amazon Web Services 
 | ✅ **[Lab 268 Operaciones De Tabla De Bases De Datos](./6-modulo-bases-de-datos/1-lab-268-operaciones-de-tabla-de-bases-de-datos/README.md)** | Establecer conexión remota a una instancia de Amazon EC2 e interactuar con el motor de base de datos MySQL desde la línea de comandos. | [📄 Doc](./6-modulo-bases-de-datos/1-lab-268-operaciones-de-tabla-de-bases-de-datos/README.md) |
 | ✅ **[Lab 269 Insertar Actualizar Y Eliminar Datos](./6-modulo-bases-de-datos/2-lab-269-insertar-actualizar-y-eliminar-datos/README.md)** | En este laboratorio práctico se realizaron operaciones fundamentales de Lenguaje de Manipulación de Datos (DML) sobre una base de datos relacional MySQL en AWS.... | [📄 Doc](./6-modulo-bases-de-datos/2-lab-269-insertar-actualizar-y-eliminar-datos/README.md) |
 | ✅ **[Lab 270 Seleccion De Datos](./6-modulo-bases-de-datos/3-lab-270-seleccion-de-datos/README.md)** | En este laboratorio práctico se ejecutaron operaciones de consulta y filtrado sobre una base de datos relacional MySQL en AWS. Para realizar las actividades, se... | [📄 Doc](./6-modulo-bases-de-datos/3-lab-270-seleccion-de-datos/README.md) |
-| ⏳ Lab 271 Realizacion De Una Busqueda Condicional | *Laboratorio en construcción...* | — |
-| ⏳ Lab 272 Trabajar Con Funciones | *Laboratorio en construcción...* | — |
-| ⏳ Lab 273 Organizacion De Datos | *Laboratorio en construcción...* | — |
-| ⏳ Lab 160 Crear Un Servidor De Base De Datos | *Laboratorio en construcción...* | — |
-| ⏳ Lab 274 Intoduccion A Amazon Aurora | *Laboratorio en construcción...* | — |
-| ⏳ Lab 275 Introduccion A Amazon Dynamodb | *Laboratorio en construcción...* | — |
-| ⏳ Lab 162 Crear Un Servidor Rds | *Laboratorio en construcción...* | — |
+| ✅ **[Lab 271 Realizacion De Una Busqueda Condicional](./6-modulo-bases-de-datos/4-lab-271-realizacion-de-una-busqueda-condicional/README.md)** | En este laboratorio práctico se aplicaron técnicas de búsqueda condicional y filtrado avanzado sobre una base de datos relacional MySQL en AWS. Accediendo al _C... | [📄 Doc](./6-modulo-bases-de-datos/4-lab-271-realizacion-de-una-busqueda-condicional/README.md) |
+| ✅ **[Lab 272 Trabajar Con Funciones](./6-modulo-bases-de-datos/5-lab-272-trabajar-con-funciones/README.md)** | En este laboratorio práctico se implementaron funciones SQL integradas en MySQL para la agregación de datos, manipulación de cadenas de texto y depuración de re... | [📄 Doc](./6-modulo-bases-de-datos/5-lab-272-trabajar-con-funciones/README.md) |
+| ✅ **[Lab 273 Organizacion De Datos](./6-modulo-bases-de-datos/6-lab-273-organizacion-de-datos/README.md)** | En este laboratorio práctico se implementaron técnicas avanzadas de organización y análisis de datos en MySQL utilizando agrupamientos tradicionales con `GROUP ... | [📄 Doc](./6-modulo-bases-de-datos/6-lab-273-organizacion-de-datos/README.md) |
+| ✅ **[Lab 160 Crear Un Servidor De Base De Datos](./6-modulo-bases-de-datos/7-lab-160-crear-un-servidor-de-base-de-datos/README.md)** | En este laboratorio práctico se aprovisionó e integró una instancia de base de datos relacional administrada **Amazon RDS para MySQL** con despliegue de alta di... | [📄 Doc](./6-modulo-bases-de-datos/7-lab-160-crear-un-servidor-de-base-de-datos/README.md) |
+| ✅ **[Lab 274 Intoduccion A Amazon Aurora](./6-modulo-bases-de-datos/8-lab-274-intoduccion-a-amazon-aurora/README.md)** | En este laboratorio práctico se aprovisionó e integró un clúster de base de datos relacional totalmente administrado mediante **Amazon Aurora (compatible con My... | [📄 Doc](./6-modulo-bases-de-datos/8-lab-274-intoduccion-a-amazon-aurora/README.md) |
+| ✅ **[Lab 275 Introduccion A Amazon Dynamodb](./6-modulo-bases-de-datos/9-lab-275-introduccion-a-amazon-dynamodb/README.md)** | En este laboratorio práctico se creó, administró y consultó una base de datos NoSQL completamente administrada mediante **Amazon DynamoDB**. Se exploró la natur... | [📄 Doc](./6-modulo-bases-de-datos/9-lab-275-introduccion-a-amazon-dynamodb/README.md) |
+| ✅ **[Lab 162 Crear Un Servidor Rds](./6-modulo-bases-de-datos/10-lab-162-crear-un-servidor-RDS/README.md)** | En este laboratorio de desafío práctico se diseñó, aprovisionó y configuró una base de datos relacional administrada utilizando **Amazon RDS (MySQL)** dentro de... | [📄 Doc](./6-modulo-bases-de-datos/10-lab-162-crear-un-servidor-RDS/README.md) |
+
+### Modulo Arquitectura De Aws
+
+| Estado / Laboratorio | Descripción General | Enlaces |
+| :--- | :--- | :---: |
+| ✅ **[Laboratorios](./7-modulo-arquitectura-de-aws/laboratorios/README.md)** | Este módulo aborda los marcos teóricos, principios de diseño y mejores prácticas fundamentales para estructurar e implementar arquitecturas sólidas, escalables ... | [📄 Doc](./7-modulo-arquitectura-de-aws/laboratorios/README.md) |
+
+### Modulo Operaciones Del Sistema
+
+| Estado / Laboratorio | Descripción General | Enlaces |
+| :--- | :--- | :---: |
+| ✅ **[Lab 168 Instalar Y Configurar Aws Cli](./8-modulo-operaciones-del-sistema/1-lab-168-instalar-y-configurar-AWS-CLI/README.md)** | En este laboratorio práctico se desplegó e instaló la **AWS Command Line Interface (AWS CLI v2)** en un entorno **Red Hat Enterprise Linux (RHEL)** sobre **Amaz... | [📄 Doc](./8-modulo-operaciones-del-sistema/1-lab-168-instalar-y-configurar-AWS-CLI/README.md) |
+
+### Modulo Herramientas De Automatizacion
+
+| Estado / Laboratorio | Descripción General | Enlaces |
+| :--- | :--- | :---: |
+| ⏳ Lab 169 Uso De Aws Systems Manager | *Laboratorio en construcción...* | — |
+
+### Modulo Servidores
+
+| Estado / Laboratorio | Descripción General | Enlaces |
+| :--- | :--- | :---: |
+| ✅ **[Lab 170 Creacion De Un Sitio Web Estatico](./10-modulo-servidores/1-lab-170-creacion-de-un-sitio-web-estatico/README.md)** | En este laboratorio práctico se automatizó el aprovisionamiento y despliegue de un sitio web estático para una cafetería utilizando la **AWS CLI v2** desde una ... | [📄 Doc](./10-modulo-servidores/1-lab-170-creacion-de-un-sitio-web-estatico/README.md) |
+| ⏳ Lab 171 Creacion De Instancias Ec2 | *Laboratorio en construcción...* | — |
+| ⏳ Lab 172 Ejercicio De Instancia Ec2 | *Laboratorio en construcción...* | — |
+| ⏳ Lab 173 Troubleshoot Create Instance | *Laboratorio en construcción...* | — |
+
+### Modulo Escalado Y Resolucion De Nombres
+
+| Estado / Laboratorio | Descripción General | Enlaces |
+| :--- | :--- | :---: |
+| ⏳ Lab 174 Escalado Y Balanceo De Carrga De Una Arquitectura | *Laboratorio en construcción...* | — |
+| ⏳ Lab 175 Uso De Escalado Automatico En Aws | *Laboratorio en construcción...* | — |
+| ⏳ Lab 176 Route53 Failover Routing | *Laboratorio en construcción...* | — |
+
+### Modulo Serverless And Containers
+
+| Estado / Laboratorio | Descripción General | Enlaces |
+| :--- | :--- | :---: |
+| ⏳ Lab 178 Trabajo Con Aws Lambda | *Laboratorio en construcción...* | — |
+| ⏳ Lab 177 Desafio Ejercicio De Aws Lambda | *Laboratorio en construcción...* | — |
+
+### Modulo Servicios De Bd De Aws
+
+| Estado / Laboratorio | Descripción General | Enlaces |
+| :--- | :--- | :---: |
+| ⏳ Lab 179 Migracion A Amazon Rds | *Laboratorio en construcción...* | — |
+
+### Modulo Servicios De Redes
+
+| Estado / Laboratorio | Descripción General | Enlaces |
+| :--- | :--- | :---: |
+| ⏳ Lab 180 Configuracion De Amazon Vpc | *Laboratorio en construcción...* | — |
+| ⏳ Lab 181 Troubleshoot A Vpc | *Laboratorio en construcción...* | — |
+
+### Modulo Almacenamiento Y Achivado
+
+| Estado / Laboratorio | Descripción General | Enlaces |
+| :--- | :--- | :---: |
+| ⏳ Lab 182 Trabajo Con Amazon Ebs | *Laboratorio en construcción...* | — |
+| ⏳ Lab 183 Administracion Del Almacenamiento | *Laboratorio en construcción...* | — |
+| ⏳ Lab 184 Desafio Ejercicio Sobre S3 | *Laboratorio en construcción...* | — |
+| ⏳ Lab 185 Trabajo Con Amazon S3 | *Laboratorio en construcción...* | — |
+
+### Modulo Monitoreo Y Seguridad
+
+| Estado / Laboratorio | Descripción General | Enlaces |
+| :--- | :--- | :---: |
+| ⏳ Lab 186 Monitoreo De Las Apps Y La Infraestructura | *Laboratorio en construcción...* | — |
+| ⏳ Lab 187 Trabajo Con Aws Cloudtrail | *Laboratorio en construcción...* | — |
+
+### Modulo Adm Del Consumo De Recursos
+
+| Estado / Laboratorio | Descripción General | Enlaces |
+| :--- | :--- | :---: |
+| ⏳ Lab 188 Adm De Recursos Mediante Etiquetado | *Laboratorio en construcción...* | — |
+| ⏳ Lab 189 Optimizar La Utilizacion | *Laboratorio en construcción...* | — |
+
+### Modulo Implementacion Automatica Y Repetible
+
+| Estado / Laboratorio | Descripción General | Enlaces |
+| :--- | :--- | :---: |
+| ⏳ Lab 190 Automatizacion De Implementaciones Con Cloudformation | *Laboratorio en construcción...* | — |
+| ⏳ Lab 191 Resolucion De Problemas En Las Implementaciones De Cloudformation | *Laboratorio en construcción...* | — |
+| ⏳ Lab 192 Desafio Cloudformation | *Laboratorio en construcción...* | — |
 
 ---
 
