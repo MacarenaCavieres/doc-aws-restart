@@ -1,5 +1,3 @@
-<!-- faltan las imagenes -->
-
 # Lab 173 Solución de Problemas y Despliegue de una Pila LAMP en Amazon EC2 mediante AWS CLI
 
 ![Amazon EC2](https://img.shields.io/badge/Compute-Amazon%20EC2-FF9900?logo=amazonec2&logoColor=white)
@@ -74,6 +72,9 @@ cp create-lamp-instance-v2.sh create-lamp-instance.backup
 
 - Diagnóstico: El script intentaba invocar la operación run-instances utilizando un ID de AMI obsoleto o desalineado con la región activa del laboratorio.
 
+![Figura 1](./images/1.png)
+_Figura 1: Captura de pantalla del error al ejecutar `create-lamp-instance-v2.sh`_
+
 - Corrección: Localizar la variable de AMI dentro del script `create-lamp-instance-v2.sh`, reemplazarla por una AMI válida correspondiente a la región en ejecución (o asegurar que consulte dinámicamente el Parameter Store de SSM), guardar los cambios y volver a ejecutar el script:
 
 ```bash
@@ -97,25 +98,28 @@ cp create-lamp-instance-v2.sh create-lamp-instance.backup
   nmap -Pn <public-ip>
   ```
 
-  3. Causa raíz identificada: El grupo de seguridad o el servicio web `httpd` presentaban restricciones en el tráfico entrante o no se encontraban activos. Se aseguró la apertura del puerto HTTP (80) y la ejecución del demonio web mediante `cloud-init`.
+![Figura 2](./images/2.png)
+_Figura 2: Ejecución del comando `nmap -Pn <public-ip>`_
 
-- Verificación de logs de inicialización:
-  Para comprobar que el script de datos de usuario configuró correctamente MariaDB y PHP, inspeccionar el registro del sistema en tiempo real:
+3. Causa raíz identificada: El grupo de seguridad presentaba una regla de entrada para el puerto 8080. Se aseguró la corrección del puerto 80.
 
-```bash
-sudo tail -f /var/log/cloud-init-output.log
-```
-
-(Presionar Ctrl + C para salir al terminar la revisión).
+![Figura 3](./images/3.png)
+_Figura 3: Ejecución del comando `nmap -Pn <public-ip>` luego de corregir el script_
 
 ## Tarea 4: Verificación de la Funcionalidad del Sitio Web
 
 1. Acceso a la Aplicación: Abrir un navegador web e ingresar a la URL de la cafetería con el sufijo `http://<public-ip>/cafe`
 
+![Figura 4](./images/4.png)
+_Figura 4: Vista del sitio web de la cafetería_
+
 2. Prueba Transaccional de Base de Datos:
    - Seleccionar el enlace Menu, elegir algunos postres y enviar el pedido.
    - Comprobar que se muestra la página de confirmación con el detalle de la compra.
    - Navegar a Order History para confirmar que los datos se registraron correctamente y se recuperan desde la base de datos MariaDB ejecutándose en la instancia LAMP.
+
+![Figura 5](./images/5.png)
+_Figura 5: Vista del sitio web. Apartado Order History con las órdenes activas_
 
 ## Resumen de Recursos y Componentes
 

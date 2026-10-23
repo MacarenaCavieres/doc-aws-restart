@@ -81,15 +81,15 @@ _Figura 2: Grupo de seguridad_
 ### Paso 3: Lanzamiento de la Instancia EC2 con User Data (DNF)
 
 1. En la consola de Amazon EC2, hacer clic en **Lanzar una instancia**.
-2. **Nombre:** `EC2 Challenge Lab 172`.
+2. **Nombre:** `challenge web server`.
 3. **AMI:** `Amazon Linux 2023` (o Amazon Linux AMI).
 4. **Tipo de instancia:** `t3.micro` (menor a `t3.medium`).
 5. **Par de claves:** _Continuar sin un par de claves_.
 6. **Configuración de red:**
-   - **VPC:** `Challenge-VPC-172`.
-   - **Subred:** `Public-Subnet-172`.
+   - **VPC:** `lab-challenge`.
+   - **Subred:** `Public-Subnet-challenge`.
    - **Asignar automáticamente IP pública:** Habilitado.
-   - **Grupo de seguridad:** Seleccionar el grupo existente `Web-SSH-SG-172`.
+   - **Grupo de seguridad:** Seleccionar el grupo existente `SG-challenge`.
 7. **Configuración de almacenamiento:**
    - Volumen raíz de 8 GiB tipo **gp2 (SSD de uso general)**.
 8. **Detalles avanzados (User Data):**
@@ -247,13 +247,13 @@ _Figura 3: Página web del desafío_
 
 ## Resumen de Recursos y Componentes
 
-| Servicio / Recurso   | Nombre del Componente   | Descripción y Función Técnica                                                                    |
-| :------------------- | :---------------------- | :----------------------------------------------------------------------------------------------- |
-| **Amazon VPC**       | `Challenge-VPC-172`     | Red virtual aislada configurada con el bloque CIDR `192.168.0.0/18`.                             |
-| **Subnet**           | `Public-Subnet-172`     | Subred pública dentro de la VPC configurada con la máscara `192.168.1.0/26`.                     |
-| **Internet Gateway** | `Challenge-IGW-172`     | Componente adjunto a la VPC que habilita la comunicación desde y hacia Internet.                 |
-| **Security Group**   | `Web-SSH-SG-172`        | Firewall virtual configurado con reglas de entrada en los puertos 22 (SSH) y 80 (HTTP).          |
-| **Amazon EC2**       | `EC2 Challenge Lab 172` | Instancia `t3.micro` con disco `gp2` y servidor Apache aprovisionado dinámicamente mediante DNF. |
+| Servicio / Recurso   | Nombre del Componente     | Descripción y Función Técnica                                                                    |
+| :------------------- | :------------------------ | :----------------------------------------------------------------------------------------------- |
+| **Amazon VPC**       | `lab-challenge`           | Red virtual aislada configurada con el bloque CIDR `192.168.0.0/18`.                             |
+| **Subnet**           | `Public-Subnet-challenge` | Subred pública dentro de la VPC configurada con la máscara `192.168.1.0/26`.                     |
+| **Internet Gateway** | `Challenge-IGW-172`       | Componente adjunto a la VPC que habilita la comunicación desde y hacia Internet.                 |
+| **Security Group**   | `SG-challenge`            | Firewall virtual configurado con reglas de entrada en los puertos 22 (SSH) y 80 (HTTP).          |
+| **Amazon EC2**       | `challenge web server`    | Instancia `t3.micro` con disco `gp2` y servidor Apache aprovisionado dinámicamente mediante DNF. |
 
 ## Conclusiones del Laboratorio
 

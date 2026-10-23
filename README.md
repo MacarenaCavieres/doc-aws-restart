@@ -111,22 +111,22 @@ Bienvenido/a a mi catálogo de laboratorios prácticos en **Amazon Web Services 
 
 | Estado / Laboratorio | Descripción General | Enlaces |
 | :--- | :--- | :---: |
-| ⏳ Lab 174 Escalado Y Balanceo De Carrga De Una Arquitectura | *Laboratorio en construcción...* | — |
-| ⏳ Lab 175 Uso De Escalado Automatico En Aws | *Laboratorio en construcción...* | — |
-| ⏳ Lab 176 Route53 Failover Routing | *Laboratorio en construcción...* | — |
+| ✅ **[Lab 174 Escalado Y Balanceo De Carrga De Una Arquitectura](./11-modulo-escalado-y-resolucion-de-nombres/1-lab-174-escalado-y-balanceo-de-carrga-de-una-arquitectura/README.md)** | En este laboratorio práctico se implementó una arquitectura de alta disponibilidad y tolerancia a fallos utilizando **Elastic Load Balancing (ELB)** y **Amazon ... | [📄 Doc](./11-modulo-escalado-y-resolucion-de-nombres/1-lab-174-escalado-y-balanceo-de-carrga-de-una-arquitectura/README.md) |
+| ✅ **[Lab 175 Uso De Escalado Automatico En Aws](./11-modulo-escalado-y-resolucion-de-nombres/2-lab-175-uso-de-escalado-automatico-en-aws/README.md)** | En este laboratorio práctico se implementó una arquitectura altamente elástica combinando herramientas de automatización de la línea de comandos (**AWS CLI**) y... | [📄 Doc](./11-modulo-escalado-y-resolucion-de-nombres/2-lab-175-uso-de-escalado-automatico-en-aws/README.md) |
+| ✅ **[Lab 176 Route53 Failover Routing](./11-modulo-escalado-y-resolucion-de-nombres/3-lab-176-route53-failover-routing/README.md)** | En este laboratorio se implementó una estrategia de conmutación por error (_DNS Failover_) para una aplicación web alojada en dos instancias de **Amazon EC2** d... | [📄 Doc](./11-modulo-escalado-y-resolucion-de-nombres/3-lab-176-route53-failover-routing/README.md) |
 
 ### Modulo Serverless And Containers
 
 | Estado / Laboratorio | Descripción General | Enlaces |
 | :--- | :--- | :---: |
-| ⏳ Lab 178 Trabajo Con Aws Lambda | *Laboratorio en construcción...* | — |
-| ⏳ Lab 177 Desafio Ejercicio De Aws Lambda | *Laboratorio en construcción...* | — |
+| ✅ **[Lab 178 Trabajo Con Aws Lambda](./12-modulo-serverless-and-containers/1-lab-178-trabajo-con-aws-lambda/README.md)** | En este laboratorio se implementó y configuró una solución informática sin servidor (_serverless_) basada en **AWS Lambda** para generar y distribuir un informe... | [📄 Doc](./12-modulo-serverless-and-containers/1-lab-178-trabajo-con-aws-lambda/README.md) |
+| ✅ **[Lab 177 Desafio Ejercicio De Aws Lambda](./12-modulo-serverless-and-containers/2-lab-177-desafio-ejercicio-de-aws-lambda/README.md)** | En este laboratorio de desafío se diseñó e implementó una solución basada en **AWS Lambda** para procesar automáticamente archivos de texto cargados en un bucke... | [📄 Doc](./12-modulo-serverless-and-containers/2-lab-177-desafio-ejercicio-de-aws-lambda/README.md) |
 
 ### Modulo Servicios De Bd De Aws
 
 | Estado / Laboratorio | Descripción General | Enlaces |
 | :--- | :--- | :---: |
-| ⏳ Lab 179 Migracion A Amazon Rds | *Laboratorio en construcción...* | — |
+| ✅ **[Lab 179 Migracion A Amazon Rds](./13-modulo-servicios-de-BD-de-aws/1-lab-179-migracion-a-amazon-rds/README.md)** | En este laboratorio se migró la arquitectura de datos de una aplicación web de cafetería desde una instancia de base de datos local ejecutada en un servidor EC2... | [📄 Doc](./13-modulo-servicios-de-BD-de-aws/1-lab-179-migracion-a-amazon-rds/README.md) |
 
 ### Modulo Servicios De Redes
 
