@@ -96,16 +96,16 @@ Bienvenido/a a mi catálogo de laboratorios prácticos en **Amazon Web Services 
 
 | Estado / Laboratorio | Descripción General | Enlaces |
 | :--- | :--- | :---: |
-| ⏳ Lab 169 Uso De Aws Systems Manager | *Laboratorio en construcción...* | — |
+| ✅ **[Lab 169 Uso De Aws Systems Manager](./9-modulo-herramientas-de-automatizacion/1-lab-169-uso-de-aws-systems-manager/README.md)** | En este laboratorio práctico se utilizaron las capacidades operativas de **AWS Systems Manager (SSM)** para centralizar el monitoreo, la configuración y el acce... | [📄 Doc](./9-modulo-herramientas-de-automatizacion/1-lab-169-uso-de-aws-systems-manager/README.md) |
 
 ### Modulo Servidores
 
 | Estado / Laboratorio | Descripción General | Enlaces |
 | :--- | :--- | :---: |
 | ✅ **[Lab 170 Creacion De Un Sitio Web Estatico](./10-modulo-servidores/1-lab-170-creacion-de-un-sitio-web-estatico/README.md)** | En este laboratorio práctico se automatizó el aprovisionamiento y despliegue de un sitio web estático para una cafetería utilizando la **AWS CLI v2** desde una ... | [📄 Doc](./10-modulo-servidores/1-lab-170-creacion-de-un-sitio-web-estatico/README.md) |
-| ⏳ Lab 171 Creacion De Instancias Ec2 | *Laboratorio en construcción...* | — |
-| ⏳ Lab 172 Ejercicio De Instancia Ec2 | *Laboratorio en construcción...* | — |
-| ⏳ Lab 173 Troubleshoot Create Instance | *Laboratorio en construcción...* | — |
+| ✅ **[Lab 171 Creacion De Instancias Ec2](./10-modulo-servidores/2-lab-171-creacion-de-instancias-ec2/README.md)** | En este laboratorio práctico se construyó e implementó una infraestructura en **Amazon Elastic Compute Cloud (Amazon EC2)** combinando métodos visuales y automa... | [📄 Doc](./10-modulo-servidores/2-lab-171-creacion-de-instancias-ec2/README.md) |
+| ✅ **[Lab 172 Ejercicio De Instancia Ec2](./10-modulo-servidores/3-lab-172-ejercicio de instancia-ec2/README.md)** | En este laboratorio de desafío (Lab 172) se diseñó e implementó una infraestructura en **Amazon Web Services (AWS)** adaptada a direccionamientos de red y scrip... | [📄 Doc](./10-modulo-servidores/3-lab-172-ejercicio de instancia-ec2/README.md) |
+| ✅ **[Lab 173 Troubleshoot Create Instance](./10-modulo-servidores/4-lab-173-troubleshoot-create-instance/README.md)** | En este laboratorio práctico de depuración se utilizó la **AWS CLI v2** desde una instancia host dedicada para automatizar el aprovisionamiento de un servidor *... | [📄 Doc](./10-modulo-servidores/4-lab-173-troubleshoot-create-instance/README.md) |
 
 ### Modulo Escalado Y Resolucion De Nombres
 

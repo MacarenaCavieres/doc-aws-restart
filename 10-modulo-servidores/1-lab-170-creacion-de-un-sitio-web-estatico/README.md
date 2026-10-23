@@ -11,8 +11,6 @@
 
 En este laboratorio práctico se automatizó el aprovisionamiento y despliegue de un sitio web estático para una cafetería utilizando la **AWS CLI v2** desde una instancia cliente **Amazon EC2**. Durante la actividad se creó un bucket en **Amazon Simple Storage Service (Amazon S3)**, se configuraron permisos de acceso e identidades en **AWS IAM**, se habilitó el alojamiento web público ajustando **ACLs** y bloques de acceso público, y se desarrolló un script en **Bash** para sincronizar cambios locales de forma eficiente mediante la operación `aws s3 sync`.
 
----
-
 ## Arquitectura del Laboratorio
 
 ```text
@@ -71,6 +69,9 @@ aws configure
 aws s3api create-bucket --bucket mi-bucket-cafeteria-2026 --region us-west-2 --create-bucket-configuration LocationConstraint=us-west-2
 ```
 
+![Figura 1](./images/1.png)
+_Figura 1: Creación del bucket_
+
 ## Tarea 4: Crear un Usuario de IAM y Asignar Políticas
 
 1. Crear el nuevo usuario de IAM `awsS3user`:
@@ -90,6 +91,9 @@ aws iam create-login-profile --user-name awsS3user --password Training123!
 ```bash
 aws iam list-policies --query "Policies[?contains(PolicyName,'S3')]"
 ```
+
+![Figura 2](./images/2.png)
+_Figura 2: Lista de las políticas de S3_
 
 4. Adjuntar la política `AmazonS3FullAccess` al usuario creado:
 
@@ -115,6 +119,9 @@ tar xvzf static-website-v2.tar.gz
 cd static-website
 ```
 
+![Figura 3](./images/3.png)
+_Figura 3: Comandos tarea 6 y 7 paso 1_
+
 2. Habilitar la función de sitio web estático en el bucket especificando el documento de índice:
 
 ```bash
@@ -127,35 +134,106 @@ aws s3 website s3://mi-bucket-cafeteria-2026/ --index-document index.html
 aws s3 cp /home/ec2-user/sysops-activity-files/static-website/ s3://mi-bucket-cafeteria-2026/ --recursive --acl public-read
 ```
 
+![Figura 4](./images/4.png)
+_Figura 4: Pasos 2 y 3 de la tarea 6 y 7_
+
 4. Verificar la disponibilidad ingresando al Endpoint generado:`http://mi-bucket-cafeteria-2026.s3-website-us-west-2.amazonaws.com`
 
-## Tarea 8 y Desafío: Automatización con Scripts Bash (`update-website.sh`)
+## Tarea 8: Crear un Archivo por Lotes para la Actualización del Sitio Web
 
-1. Crear el script de actualización automatizada `update-website.sh`:
+1. Consultar el historial de comandos para obtener la instrucción exacta de carga realizada previamente:
+
+```bash
+history
+```
+
+2. Crear un archivo de script vacío llamado update-website.sh en el directorio principal:
 
 ```bash
 cd ~
-nano update-website.sh
+touch update-website.sh
 ```
 
-2. Insertar el comando de sincronización optimizado (`aws s3 sync`):
+3. Editar el archivo con la herramienta vi para incluir la cabecera #!/bin/bash y la orden de copia masiva:
+
+```bash
+vi update-website.sh
+```
+
+4. Presionar `i` para ingresar al modo de inserción y agregar las siguientes líneas (asegurándose de presionar `Enter` después del shebang `#!/bin/bash`):
+
+```bash
+#!/bin/bash
+aws s3 cp /home/ec2-user/sysops-activity-files/static-website/ s3://mi-bucket-cafeteria-2026/ --recursive --acl public-read
+```
+
+5. Opcionalmente, asignar permisos de ejecución al archivo por lotes:
+
+```bash
+chmod +x update-website.sh
+```
+
+6. Abrir el archivo `index.html` local para realizar modificaciones de prueba en la interfaz:
+
+```bash
+vi sysops-activity-files/static-website/index.html
+```
+
+7. Presionar `i` para ingresar al modo de edición y realizar los siguientes cambios en los atributos `bgcolor`:
+   - Cambiar la primera ocurrencia de `bgcolor="aquamarine"` a `bgcolor="gainsboro"`.
+
+   - Cambiar `bgcolor="orange"` a `bgcolor="cornsilk"`.
+
+   - Cambiar la segunda ocurrencia de `bgcolor="aquamarine"` a `bgcolor="gainsboro"`.
+
+8. Ejecutar el script por lotes para subir la versión actualizada hacia el bucket de Amazon S3:
+
+```bash
+./update-website.sh
+```
+
+![Figura 5](./images/5.png)
+_Figura 5: Ejecución del comando `./update-website.sh`_
+
+9. Refrescar la página en el navegador para verificar la actualización del sitio web de la cafetería.
+
+![Figura 7](./images/7.png)
+_Figura 7: Vista el sitio web_
+
+## Desafío Opcional: Sincronización Eficiente mediante aws s3 sync
+
+El comando utilizado en la Tarea 8 (`aws s3 cp --recursive`) vuelve a transferir todos los archivos al bucket de S3 independientemente de si sufrieron modificaciones. Para optimizar la transferencia de archivos, se actualizó el script utilizando `aws s3 sync`.
+
+1. Abrir nuevamente el archivo `index.html` y realizar una modificación evidente en el código HTML (por ejemplo, cambiar otro color de fondo o texto):
+
+```bash
+vi sysops-activity-files/static-website/index.html
+```
+
+2. Modificar el script `update-website.sh` reemplazando el comando `aws s3 cp` por `aws s3 sync`:
+
+```bash
+vi update-website.sh
+```
 
 ```bash
 #!/bin/bash
 aws s3 sync /home/ec2-user/sysops-activity-files/static-website/ s3://mi-bucket-cafeteria-2026/ --acl public-read
 ```
 
-3. Asignar permisos de ejecución al script:
-
-```bash
-chmod +x update-website.sh
-```
-
-4. Realizar modificaciones en el archivo `index.html` y ejecutar el script para validar la transferencia delta:
+3. Ejecutar el script por lotes actualizado para enviar los cambios:
 
 ```bash
 ./update-website.sh
 ```
+
+![Figura 6](./images/6.png)
+_Figura 6: Ejecución del comando `./update-website.sh` despues de agregar el comnado `sync`_
+
+4. Análisis de Eficiencia (`cp` vs `sync`):
+   - El comando `aws s3 sync` compara marcas de tiempo y checksums (MD5) entre los archivos locales y los objetos en S3.
+
+   - A diferencia de `aws s3 cp`, que transfiere todo el contenido del directorio en cada ejecución, `aws s3 sync` únicamente subió el archivo `index.html` modificado, omitiendo la carga redundante de imágenes y hojas de estilo intactas.
 
 ## Resumen de Recursos y Componentes
 

@@ -62,7 +62,7 @@ _Figura 1: Lista de las políticas por el cliente_
 7. Obtener la IP pública (`ServerIP`) y acceder desde un navegador web para verificar la carga del **Widget Manufacturing Dashboard**.
 
 ![Figura 2](./images/2.png)
-_Figura 2: Captura de la tareaa 2_
+_Figura 2: Captura de la tarea 2_
 
 ## Tarea 3: Utilizar Parameter Store para Administrar la Configuración de la Aplicación
 
