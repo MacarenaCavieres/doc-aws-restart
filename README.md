@@ -132,24 +132,24 @@ Bienvenido/a a mi catálogo de laboratorios prácticos en **Amazon Web Services 
 
 | Estado / Laboratorio | Descripción General | Enlaces |
 | :--- | :--- | :---: |
-| ⏳ Lab 180 Configuracion De Amazon Vpc | *Laboratorio en construcción...* | — |
-| ⏳ Lab 181 Troubleshoot A Vpc | *Laboratorio en construcción...* | — |
+| ✅ **[Lab 180 Configuracion De Amazon Vpc](./14-modulo-servicios-de-redes/01-lab-180-configuracion-de-amazon-vpc/README.md)** | En este laboratorio se diseñó y configuró una infraestructura de red virtual aislada en la nube de AWS mediante **Amazon Virtual Private Cloud (Amazon VPC)**. S... | [📄 Doc](./14-modulo-servicios-de-redes/01-lab-180-configuracion-de-amazon-vpc/README.md) |
+| ✅ **[Lab 181 Troubleshoot A Vpc](./14-modulo-servicios-de-redes/02-lab-181-troubleshoot-a-vpc/README.md)** | En este laboratorio se diagnosticaron y resolvieron problemas complejos de configuración de red en una **Amazon VPC**, implementando además la captura y análisi... | [📄 Doc](./14-modulo-servicios-de-redes/02-lab-181-troubleshoot-a-vpc/README.md) |
 
 ### Modulo Almacenamiento Y Achivado
 
 | Estado / Laboratorio | Descripción General | Enlaces |
 | :--- | :--- | :---: |
-| ⏳ Lab 182 Trabajo Con Amazon Ebs | *Laboratorio en construcción...* | — |
-| ⏳ Lab 183 Administracion Del Almacenamiento | *Laboratorio en construcción...* | — |
-| ⏳ Lab 184 Desafio Ejercicio Sobre S3 | *Laboratorio en construcción...* | — |
-| ⏳ Lab 185 Trabajo Con Amazon S3 | *Laboratorio en construcción...* | — |
+| ✅ **[Lab 182 Trabajo Con Amazon Ebs](./15-modulo-almacenamiento-y-achivado/01-lab-182-trabajo-con-amazon-EBS/README.md)** | En este laboratorio se trabajó con **Amazon Elastic Block Store (Amazon EBS)** para aprovisionar, configurar y administrar almacenamiento en bloque de alto rend... | [📄 Doc](./15-modulo-almacenamiento-y-achivado/01-lab-182-trabajo-con-amazon-EBS/README.md) |
+| ✅ **[Lab 183 Administracion Del Almacenamiento](./15-modulo-almacenamiento-y-achivado/02-lab-183-administracion-del-almacenamiento/README.md)** | En este laboratorio se profundizó en la administración avanzada de datos en volúmenes de **Amazon EBS** y **Amazon S3** mediante la **AWS CLI**. Se automatizó l... | [📄 Doc](./15-modulo-almacenamiento-y-achivado/02-lab-183-administracion-del-almacenamiento/README.md) |
+| ✅ **[Lab 184 Desafio Ejercicio Sobre S3](./15-modulo-almacenamiento-y-achivado/03-lab-184-desafio-ejercicio-sobre-s3/README.md)** | En este laboratorio de desafío se evaluaron y aplicaron los conceptos fundamentales de **Amazon Simple Storage Service (Amazon S3)**. Se configuró el entorno de... | [📄 Doc](./15-modulo-almacenamiento-y-achivado/03-lab-184-desafio-ejercicio-sobre-s3/README.md) |
+| ✅ **[Lab 185 Trabajo Con Amazon S3](./15-modulo-almacenamiento-y-achivado/04-lab-185-trabajo-con-amazon-s3/README.md)** | En este laboratorio se configuró un bucket de **Amazon Simple Storage Service (Amazon S3)** destinado al uso compartido y seguro de imágenes con un usuario exte... | [📄 Doc](./15-modulo-almacenamiento-y-achivado/04-lab-185-trabajo-con-amazon-s3/README.md) |
 
 ### Modulo Monitoreo Y Seguridad
 
 | Estado / Laboratorio | Descripción General | Enlaces |
 | :--- | :--- | :---: |
-| ⏳ Lab 186 Monitoreo De Las Apps Y La Infraestructura | *Laboratorio en construcción...* | — |
-| ⏳ Lab 187 Trabajo Con Aws Cloudtrail | *Laboratorio en construcción...* | — |
+| ✅ **[Lab 186 Monitoreo De Las Apps Y La Infraestructura](./16-modulo-monitoreo-y-seguridad/01-lab-186-monitoreo-de-las-apps-y-la-infraestructura/README.md)** | En este laboratorio se implementó una estrategia integral de observabilidad, monitoreo de sistemas y gobernanza de cumplimiento sobre una arquitectura en la nub... | [📄 Doc](./16-modulo-monitoreo-y-seguridad/01-lab-186-monitoreo-de-las-apps-y-la-infraestructura/README.md) |
+| ✅ **[Lab 187 Trabajo Con Aws Cloudtrail](./16-modulo-monitoreo-y-seguridad/02-lab-187-trabajo-con-aws-cloudtrail/README.md)** | En esta actividad de investigación forense y seguridad en la nube, se simuló un escenario de ataque en una infraestructura de **AWS** donde el sitio web de la c... | [📄 Doc](./16-modulo-monitoreo-y-seguridad/02-lab-187-trabajo-con-aws-cloudtrail/README.md) |
 
 ### Modulo Adm Del Consumo De Recursos
 
