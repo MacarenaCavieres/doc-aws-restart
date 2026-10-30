@@ -8,8 +8,6 @@ Bienvenido/a a mi catálogo de laboratorios prácticos en **Amazon Web Services 
 
 > 💡 *Este índice se construye y actualiza dinámicamente mediante un script de Python (`generate_readme.py`) que extrae automáticamente la descripción técnica de cada laboratorio.*
 
----
-
 ## Módulos y Laboratorios Prácticos
 
 ### Modulo Fundamentos De La Nube
@@ -111,7 +109,7 @@ Bienvenido/a a mi catálogo de laboratorios prácticos en **Amazon Web Services 
 
 | Estado / Laboratorio | Descripción General | Enlaces |
 | :--- | :--- | :---: |
-| ✅ **[Lab 174 Escalado Y Balanceo De Carrga De Una Arquitectura](./11-modulo-escalado-y-resolucion-de-nombres/01-lab-174-escalado-y-balanceo-de-carrga-de-una-arquitectura/README.md)** | En este laboratorio práctico se implementó una arquitectura de alta disponibilidad y tolerancia a fallos utilizando **Elastic Load Balancing (ELB)** y **Amazon ... | [📄 Doc](./11-modulo-escalado-y-resolucion-de-nombres/01-lab-174-escalado-y-balanceo-de-carrga-de-una-arquitectura/README.md) |
+| ✅ **[Lab 174 Escalado Y Balanceo De Carga De Una Arquitectura](./11-modulo-escalado-y-resolucion-de-nombres/01-lab-174-escalado-y-balanceo-de-carga-de-una-arquitectura/README.md)** | En este laboratorio práctico se implementó una arquitectura de alta disponibilidad y tolerancia a fallos utilizando **Elastic Load Balancing (ELB)** y **Amazon ... | [📄 Doc](./11-modulo-escalado-y-resolucion-de-nombres/01-lab-174-escalado-y-balanceo-de-carga-de-una-arquitectura/README.md) |
 | ✅ **[Lab 175 Uso De Escalado Automatico En Aws](./11-modulo-escalado-y-resolucion-de-nombres/02-lab-175-uso-de-escalado-automatico-en-aws/README.md)** | En este laboratorio práctico se implementó una arquitectura altamente elástica combinando herramientas de automatización de la línea de comandos (**AWS CLI**) y... | [📄 Doc](./11-modulo-escalado-y-resolucion-de-nombres/02-lab-175-uso-de-escalado-automatico-en-aws/README.md) |
 | ✅ **[Lab 176 Route53 Failover Routing](./11-modulo-escalado-y-resolucion-de-nombres/03-lab-176-route53-failover-routing/README.md)** | En este laboratorio se implementó una estrategia de conmutación por error (_DNS Failover_) para una aplicación web alojada en dos instancias de **Amazon EC2** d... | [📄 Doc](./11-modulo-escalado-y-resolucion-de-nombres/03-lab-176-route53-failover-routing/README.md) |
 
@@ -155,27 +153,24 @@ Bienvenido/a a mi catálogo de laboratorios prácticos en **Amazon Web Services 
 
 | Estado / Laboratorio | Descripción General | Enlaces |
 | :--- | :--- | :---: |
-| ⏳ Lab 188 Adm De Recursos Mediante Etiquetado | *Laboratorio en construcción...* | — |
-| ⏳ Lab 189 Optimizar La Utilizacion | *Laboratorio en construcción...* | — |
+| ✅ **[Lab 188 Adm De Recursos Mediante Etiquetado](./17-modulo-adm-del-consumo-de-recursos/01-lab-188-adm-de-recursos-mediante-etiquetado/README.md)** | En este laboratorio se implementó una estrategia integral de administración, control operativo y gobernanza de seguridad basada en el **etiquetado de recursos (... | [📄 Doc](./17-modulo-adm-del-consumo-de-recursos/01-lab-188-adm-de-recursos-mediante-etiquetado/README.md) |
+| ✅ **[Lab 189 Optimizar La Utilizacion](./17-modulo-adm-del-consumo-de-recursos/02-lab-189-optimizar-la-utilizacion/README.md)** | En este laboratorio se implementó una estrategia de optimización y reducción de costos operativos sobre la arquitectura en la nube de la cafetería. Tras haber c... | [📄 Doc](./17-modulo-adm-del-consumo-de-recursos/02-lab-189-optimizar-la-utilizacion/README.md) |
 
 ### Modulo Implementacion Automatica Y Repetible
 
 | Estado / Laboratorio | Descripción General | Enlaces |
 | :--- | :--- | :---: |
-| ⏳ Lab 190 Automatizacion De Implementaciones Con Cloudformation | *Laboratorio en construcción...* | — |
-| ⏳ Lab 191 Resolucion De Problemas En Las Implementaciones De Cloudformation | *Laboratorio en construcción...* | — |
-| ⏳ Lab 192 Desafio Cloudformation | *Laboratorio en construcción...* | — |
-
----
+| ✅ **[Lab 190 Automatizacion De Implementaciones Con Cloudformation](./18-modulo-implementacion-automatica-y-repetible/01-lab-190-automatizacion-de-implementaciones-con-cloudformation/README.md)** | En este laboratorio se implementó una estrategia de **Infraestructura como Código (IaC)** utilizando **AWS CloudFormation** para automatizar el aprovisionamient... | [📄 Doc](./18-modulo-implementacion-automatica-y-repetible/01-lab-190-automatizacion-de-implementaciones-con-cloudformation/README.md) |
+| ✅ **[Lab 191 Resolucion De Problemas En Las Implementaciones De Cloudformation](./18-modulo-implementacion-automatica-y-repetible/02-lab-191-resolucion-de-problemas-en-las-implementaciones-de-cloudformation/README.md)** | En este laboratorio avanzado se abordaron técnicas de diagnóstico, depuración y resolución de problemas en implementaciones de **AWS CloudFormation**. Se inició... | [📄 Doc](./18-modulo-implementacion-automatica-y-repetible/02-lab-191-resolucion-de-problemas-en-las-implementaciones-de-cloudformation/README.md) |
+| ✅ **[Lab 192 Desafio Cloudformation](./18-modulo-implementacion-automatica-y-repetible/03-lab-192-desafio-cloudformation/README.md)** | En este laboratorio de desafío se implementó una solución integral de **Infraestructura como Código (IaC)** utilizando una plantilla personalizada de **AWS Clou... | [📄 Doc](./18-modulo-implementacion-automatica-y-repetible/03-lab-192-desafio-cloudformation/README.md) |
 
 ## Stack Tecnológico Dominado
 
-- **Cloud & Infraestructura:** AWS EC2, VPC, IAM, CloudWatch, Systems Manager, RDS, Aurora, DynamoDB.
+- **Cloud & Infraestructura:** AWS EC2, EC2 AutoScaling, VPC, CloudFormation, S3, IAM, CloudWatch, ELB, AWS Config, Systems Manager, Lambda, SNS, RDS, Aurora, DynamoDB, Route 53.
+- **Análisis & Automatización:** JMESPath, CloudTrail, Athena, AWS CLI, Infraestructura como Código (IaC).
 - **Sistemas Operativos & Shell:** Amazon Linux 2023, Ubuntu, Bash Scripting, Permisos, Logs, Servicios (systemd).
-- **Redes & Seguridad:** VPC Subnetting, Security Groups, NACLs, Hardening, Cifrado, Routing.
+- **Redes & Seguridad:** VPC Subnetting, Security Groups, NACLs, Hardening, Cifrado, Routing, Drift Detection.
 - **Bases de Datos & Lenguajes:** MySQL, SQL DQL/DDL/DML, Python 3, Boto3.
-
----
 
 ## Contacto & Enlaces
 

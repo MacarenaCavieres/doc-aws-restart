@@ -82,7 +82,6 @@ def generate_global_readme():
         "> 💡 *Este índice se construye y actualiza dinámicamente mediante un script de Python (`generate_readme.py`) "
         "que extrae automáticamente la descripción técnica de cada laboratorio.*\n\n"
     )
-    markdown_content.append("---\n\n")
 
     # --- TABLAS POR MÓDULO ---
     markdown_content.append("## Módulos y Laboratorios Prácticos\n\n")
@@ -139,18 +138,17 @@ def generate_global_readme():
 
             markdown_content.append("\n")
 
-    markdown_content.append("---\n\n")
 
     # --- STACK Y CONTACTO ---
     markdown_content.append("## Stack Tecnológico Dominado\n\n")
     markdown_content.append(
-        "- **Cloud & Infraestructura:** AWS EC2, VPC, IAM, CloudWatch, Systems Manager, RDS, Aurora, DynamoDB.\n"
+        "- **Cloud & Infraestructura:** AWS EC2, EC2 AutoScaling, VPC, CloudFormation, S3, IAM, CloudWatch, ELB, AWS Config, Systems Manager, Lambda, SNS, RDS, Aurora, DynamoDB, Route 53.\n"
+        "- **Análisis & Automatización:** JMESPath, CloudTrail, Athena, AWS CLI, Infraestructura como Código (IaC).\n"
         "- **Sistemas Operativos & Shell:** Amazon Linux 2023, Ubuntu, Bash Scripting, Permisos, Logs, Servicios (systemd).\n"
-        "- **Redes & Seguridad:** VPC Subnetting, Security Groups, NACLs, Hardening, Cifrado, Routing.\n"
+        "- **Redes & Seguridad:** VPC Subnetting, Security Groups, NACLs, Hardening, Cifrado, Routing, Drift Detection.\n"
         "- **Bases de Datos & Lenguajes:** MySQL, SQL DQL/DDL/DML, Python 3, Boto3.\n\n"
     )
 
-    markdown_content.append("---\n\n")
     markdown_content.append("## Contacto & Enlaces\n\n")
     markdown_content.append(
         "- **LinkedIn:** Conectemos para colaborar o conocer más sobre mis proyectos en la nube [MacarenaCavieres](https://www.linkedin.com/in/macarena-cavieres-rubio/)\n"
