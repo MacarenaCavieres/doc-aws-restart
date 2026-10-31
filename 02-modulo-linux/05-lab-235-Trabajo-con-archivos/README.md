@@ -1,4 +1,4 @@
-# Lab-235 Respaldos en Linux: Archivos TAR, Redirección de Salida y Logs
+# Lab 235 Respaldos en Linux: Archivos TAR, Redirección de Salida y Logs
 
 ![Linux](https://img.shields.io/badge/OS-Amazon%20Linux%202023-orange?logo=amazon)
 ![Bash](https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnu-bash&logoColor=white)
@@ -17,7 +17,10 @@ En este laboratorio práctico se aborda la creación y gestión de copias de seg
 
 ## Estructura de carpetas
 
-![Diagrama 1](./images/diagrama-1.jpeg)
+<p style="margin-bottom: 0px;">
+  <img src="./images/diagrama-1.jpeg" alt="Estructura de carpetas" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
 _Diagrama 1: Estructura de carpetas y archivos_
 
 ## Tarea 1: Creación del Respaldo Comprimido (`tar`)
@@ -41,7 +44,10 @@ tar -czvf backup.CompanyA.tar.gz CompanyA
 ls
 ```
 
-![Figura 1](./images/1.png)
+<p style="margin-bottom: 0px;">
+  <img src="./images/1.png" alt="Figura 1" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
 _Figura 1: Comandos ejecutados para listar y comprimir un directorio_
 
 ## Tarea 2: Registro de Auditoría y Redirección (`tee`)
@@ -74,7 +80,10 @@ mv ../backup.CompanyA.tar.gz IA/
 ls . IA
 ```
 
-![Figura 2](./images/2.png)
+<p style="margin-bottom: 0px;">
+  <img src="./images/2.png" alt="Figura 2" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
 _Figura 2: Comandos ejecutados para redirección `tee` y reubicación_
 
 ## Resumen de comandos y sintaxis

@@ -33,7 +33,10 @@ sudo ps -aux | grep -v root | sudo tee SharedFolders/processes.csv
 cat SharedFolders/processes.csv
 ```
 
-![Figura 1](./images/1.png)
+<p style="margin-bottom: 0px;">
+  <img src="./images/1.png" alt="Figura 1" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
 _Figura 1: Captura de pantalla comandos ejecutados para la auditoría y exportación de procesos_
 
 ## Tarea 2: Monitoreo en Tiempo Real (`top`)
@@ -50,7 +53,10 @@ top
 top -hv
 ```
 
-![Figura 2](./images/2.png)
+<p style="margin-bottom: 0px;">
+  <img src="./images/2.png" alt="Figura 2" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
 _Figura 2: Captura de pantalla comando top_
 
 ## Tarea 3: Programación de Tareas Automatizadas (`cron`)
@@ -71,7 +77,10 @@ MAILTO=root
 0 * * * * ls -la $(find .) | sed -e 's/..csv/#####.csv/g' > /home/ec2-user/companyA/SharedFolders/filteredAudit.csv
 ```
 
-![Figura 3](./images/3.png)
+<p style="margin-bottom: 0px;">
+  <img src="./images/3.png" alt="Figura 3" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
 _Figura 3: Vim con las instrucciones crontab_
 
 ### Verificación de la Tarea Programada:
@@ -81,7 +90,10 @@ _Figura 3: Vim con las instrucciones crontab_
 sudo crontab -l
 ```
 
-![Figura 4](./images/4.png)
+<p style="margin-bottom: 0px;">
+  <img src="./images/4.png" alt="Figura 4" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
 _Figura 4: Verificación de las instrucciones crontab_
 
 ## Resumen de comandos y sintaxis

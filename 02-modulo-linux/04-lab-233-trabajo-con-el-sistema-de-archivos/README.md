@@ -23,7 +23,10 @@ Se creó la estructura corporativa de la empresa `CompanyA` dentro del directori
 
 ### Estructura inicial
 
-![Diagrama 1](./images/diagrama-1.jpeg)
+<p style="margin-bottom: 0px;">
+  <img src="./images/diagrama-1.jpeg" alt="Estructura inicial" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
 _Diagrama 1: Estructura inicial de carpetas y archivos_
 
 ### Comandos Ejecutados:
@@ -46,7 +49,10 @@ touch Management/Managers.csv Management/Schedule.csv
 ls -laR
 ```
 
-![Figura 1](./images/1.png)
+<p style="margin-bottom: 0px;">
+  <img src="./images/1.png" alt="Figura 1" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
 _Figura 1: Comandos ejecutados para crear carpetas, subcarpetas y archivos_
 
 ## Tarea 2: Reorganización y Restructuración de Carpetas
@@ -55,7 +61,10 @@ Posteriormente, se aplicaron cambios organizacionales para reestructurar los dep
 
 ## Estructura final
 
-![Diagrama 2](./images/diagrama-2.jpeg)
+<p style="margin-bottom: 0px;">
+  <img src="./images/diagrama-2.jpeg" alt="Estructura final" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
 _Diagrama 2: Estructura final de carpetas y archivos_
 
 1. Copiar recursivamente el departamento de Finanzas:
@@ -87,7 +96,10 @@ mkdir Employees
 mv Assessments.csv TrialPeriod.csv Employees/
 ```
 
-![Figura 2](./images/2.png)
+<p style="margin-bottom: 0px;">
+  <img src="./images/2.png" alt="Figura 2" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
 _Figura 2: Comandos ejecutados para crear carpetas, subcarpetas y archivos de la estructura final_
 
 ## Resumen de Comandos y Sintaxis

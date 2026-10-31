@@ -8,7 +8,21 @@
 
 Este laboratorio aborda un problema de conectividad presentado por un cliente empresarial cuya infraestructura no lograba establecer comunicación bidireccional hacia Internet. La solución consistio en la construcción metódica y estructurada desde cero de una Amazon Virtual Private Cloud (Amazon VPC), integrando sus componentes fundamentales: subred publica, Internet Gateway, tablas de enrutamiento, listas de control de acceso a la red (NACL) y grupos de seguridad. La arquitectura se validó mediante el despliegue de una instancia Amazon EC2 y la verificación del flujo de paquetes mediante ICMP (ping) hacia el exterior.
 
-<!-- Falta arquitectura del cliente -->
+## Arquitectura y Flujo de Conectividad de la Red
+
+La siguiente arquitectura representa la solución implementada para resolver el problema de conectividad del cliente (Brock), estableciendo una red enrutable y segura dentro de AWS:
+
+![Figura 1](./images/arquitectura.jpg)
+_Figura: Topología de red integrada con VPC, Subred Pública, Tabla de Rutas, Internet Gateway y validación de conectividad mediante ping._
+
+### Explicación del Flujo y Componentes de la Arquitectura:
+
+- **Test VPC (`192.168.0.0/18`):** Actúa como el centro de datos virtual aislado en la nube, proporcionando el contenedor lógico para todos los recursos de red[cite: 3].
+- **Public Subnet (`192.168.1.0/26`):** Subred configurada dentro de la VPC para albergar recursos que requieren acceso directo a internet[cite: 3].
+- **Test VPC IGW (Internet Gateway):** Pasarela de internet adjunta a la VPC que permite el tráfico bidireccional entre los recursos internos y el internet público[cite: 3].
+- **Subnet Route Table:** Contiene las reglas de enrutamiento clave. Destaca la ruta predeterminada `0.0.0.0/0` apuntando directamente hacia el `Internet Gateway`, permitiendo que cualquier paquete sin destino local sea encaminado hacia la salida a internet[cite: 3].
+- **Public Subnet NACL y Security Group:** Capas de seguridad perimetral (a nivel de subred e instancia respectivamente) configuradas para permitir y controlar el flujo de tráfico de red (como SSH y respuestas ICMP)[cite: 3].
+- **EC2 Instance (`t3.micro`):** Instancia de cómputo desplegada en la subred pública con una dirección IP pública asignada, utilizada para ejecutar las pruebas de validación mediante el comando `ping google.com` (garantizando un 0% de pérdida de paquetes y conectividad exitosa)[cite: 3].
 
 ## Objetivos del Laboratorio
 

@@ -17,8 +17,6 @@ Este laboratorio práctico abarca la administración del servidor web Apache (`h
 - Analizar el impacto de la carga en local usando la herramienta `top`.
 - Monitorear métricas de rendimiento (utilización de CPU, I/O de disco y red) desde los **Paneles Automáticos de AWS CloudWatch**.
 
----
-
 ## Tarea 1: Gestión e Inspección del Servicio Apache (`httpd`)
 
 Se validó el estado inicial del demonio `httpd`, se puso en marcha y se comprobó la respuesta del servidor web.
@@ -36,7 +34,10 @@ sudo systemctl start httpd.service
 sudo systemctl status httpd.service
 ```
 
-![Figura 1](./images/1.png)
+<p style="margin-bottom: 0px;">
+  <img src="./images/1.png" alt="Figura 1" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
 _Figura 1: Captura de pantalla de los comandos_
 
 ## Prueba de Conexión:
@@ -61,7 +62,10 @@ top
 ./stress.sh & top
 ```
 
-![Figura 2](./images/2.png)
+<p style="margin-bottom: 0px;">
+  <img src="./images/2.png" alt="Figura 2" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
 _Figura 2: Captura de pantalla de la carga de ./stress.sh_
 
 _Observación: Se identificó que el proceso stress incrementó el uso de CPU a niveles elevados (14% - 100% de núcleos asignados)._
@@ -83,7 +87,10 @@ Pasos Realizados:
 
 4. Ajuste del intervalo de tiempo del panel para reducir la latencia de acumulación de datos (de 5 minutos a intervalos de 1 segundo).
 
-![Figura 3](./images/3.png)
+<p style="margin-bottom: 0px;">
+  <img src="./images/3.png" alt="Figura 3" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
 _Figura 3: Paneles de Cloudwatch_
 
 ## Resumen de Comandos y Sintaxis

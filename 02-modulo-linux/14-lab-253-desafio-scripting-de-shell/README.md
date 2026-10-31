@@ -27,44 +27,47 @@ Para almacenar el estado del lote actual de forma persistente, se inicializa el 
 echo 1 > counter.txt
 ```
 
-### Script de Automatización (create_files.sh)
+### Script de Automatización (files.sh)
 
-```bash
-#!/bin/bash
-student_name="Macarena"
+<p style="margin-bottom: 0px;">
+  <img src="./images/2.png" alt="Figura 1" width="100%" style="max-width: 1000px; height: auto;">
+</p>
 
-# Lectura del indice inicial desde el archivo de control
-MIN=$(cat counter.txt)
-MAX=$(($MIN + 24))
-NEW_COUNTER=$(($MAX + 1))
-
-# Generacion del lote de 25 archivos
-for x in $(seq $MIN$MAX)
-do
-    touch "/home/$USER/challenge/${student_name}-${x}"
-done
-
-# Actualizacion del archivo de control para la siguiente ejecucion
-echo $NEW_COUNTER | tee counter.txt
-
-echo "Good job"
-```
+_Figura 1: Captura del script `files.sh`_
 
 ### Pruebas de Validación y Ejecución
 
 ```bash
 # Asignar permisos de ejecucion al script
-chmod +x create_files.sh
+chmod +x files.sh
 
 # Primera ejecucion (genera del 1 al 25)
-./create_files.sh
+./files.sh
 
 # Segunda ejecucion (genera del 26 al 50)
-./create_files.sh
+./files.sh
 
 # Confirmar la creacion de archivos y sus tamaños (0 KB)
 ls -la /home/$USER/challenge
 ```
+
+<p style="margin-bottom: 0px;">
+  <img src="./images/1.png" alt="Figura 2" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
+_Figura 2: Captura de todos los comandos ejecutados_
+
+<p style="margin-bottom: 0px;">
+  <img src="./images/3.png" alt="Figura 3" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
+_Figura 1: Lista de los archivos creados luego de la primera ejecucion del script `files.sh`_
+
+<p style="margin-bottom: 0px;">
+  <img src="./images/4.png" alt="Figura 4" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
+_Figura 4: Lista de los archivos creados luego de la segunda ejecucion del script `files.sh`_
 
 ## Resumen de Comandos y Sintaxis
 

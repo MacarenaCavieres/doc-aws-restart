@@ -58,8 +58,11 @@ _- `-p`: Preserva los permisos de archivos y directorios originales (preserve pe
 _- `-z`: Comprime el archivo resultante utilizando gzip._\
 _- `-f`: Especifica la ruta y nombre del archivo de salida (file)._
 
-![Figura 2](./images/2.png)
-_Figura 2: Captura de pantalla del script_
+<p style="margin-bottom: 0px;">
+  <img src="./images/2.png" alt="Figura 1" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
+_Figura 1: Captura de pantalla del script_
 
 ## Tarea 3: Ejecución y Verificación del Respaldo
 
@@ -73,8 +76,11 @@ Se probó la ejecución directa del script en la consola de comandos.
 ls -l backups/
 ```
 
-![Figura 1](./images/1.png)
-_Figura 1: Captura de pantalla de los comandos_
+<p style="margin-bottom: 0px;">
+  <img src="./images/1.png" alt="Figura 2" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
+_Figura 2: Captura de pantalla de los comandos_
 
 ## Salida Esperada:
 

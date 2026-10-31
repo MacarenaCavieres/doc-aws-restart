@@ -9,9 +9,6 @@
 
 Este laboratorio aborda un caso de soporte técnico de red en Amazon Web Services (AWS). Se analiza una incidencia donde una instancia de Amazon EC2 (Instancia A) ubicada en una subred pública dentro de una VPC con CIDR `10.0.0.0/16` carece de acceso a Internet, mientras que otra instancia en la misma subred (Instancia B) sí cuenta con conectividad. El análisis determinó que la causa raíz era la ausencia de una dirección IP pública asociada a la Instancia A. La solución implementada consistió en la asignación e asociación de una Elastic IP (EIP).
 
-![Figura 1](./images/arquitectura.png)
-_Figura 1: Arquitectura del cliente_
-
 ## Objetivos del Laboratorio
 
 - Investigar incidencias de conectividad de red evaluando la configuración de red de las instancias EC2.
@@ -19,12 +16,21 @@ _Figura 1: Arquitectura del cliente_
 - Corregir el fallo de conectividad a Internet mediante la asignación de una dirección IP Elástica en Amazon EC2.
 - Evaluar el impacto arquitectónico de utilizar rangos IP públicos en direccionamientos de VPC.
 
+<p style="margin-bottom: 0px;">
+  <img src="./images/arquitectura.png" alt="Arquitectura del cliente" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
+_Diagrama 1: Arquitectura del cliente_
+
 ## Tarea 1: Investigación del Entorno de Red
 
 Se inspeccionaron las propiedades de red de ambas instancias en la consola de administración de Amazon EC2.
 
-![Figura 2](./images/1.png)
-_Figura 2: Captura de las instancias_
+<p style="margin-bottom: 0px;">
+  <img src="./images/1.png" alt="Figura 1" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
+_Figura 1: Captura de las instancias_
 
 ### Tabla Comparativa de Direccionamiento
 
@@ -33,11 +39,17 @@ _Figura 2: Captura de las instancias_
 | Instancia A | Subred Pública (`10.0.0.0/24`) | `10.0.0.X`             | _Ausente / None_       | Sin acceso a Internet      |
 | Instancia B | Subred Pública (`10.0.0.0/24`) | `10.0.0.Y`             | Asignada (`X.X.X.X`)   | Acceso a Internet correcto |
 
-![Figura 3](./images/2.png)
-_Figura 3: Detalles instancia B_
+<p style="margin-bottom: 0px;">
+  <img src="./images/2.png" alt="Figura 2" width="100%" style="max-width: 1000px; height: auto;">
+</p>
 
-![Figura 4](./images/3.png)
-_Figura 4: Detalles instancia A_
+_Figura 2: Detalles instancia B_
+
+<p style="margin-bottom: 0px;">
+  <img src="./images/3.png" alt="Figura 3" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
+_Figura 3: Detalles instancia A_
 
 ### Diagnóstico de Causa Raíz
 
@@ -55,17 +67,29 @@ Para restablecer la conectividad de la Instancia A sin modificar la configuraci�
 4. Elección del tipo de recurso **Instance**, seleccionando la **Instancia A** y su interfaz de red primaria (`eth0`).
 5. Confirmación de la asociación.
 
-![Figura 5](./images/4.png)
-_Figura 5: Paso 2, Allocate Elastic IP Address_
+<p style="margin-bottom: 0px;">
+  <img src="./images/4.png" alt="Figura 4" width="100%" style="max-width: 1000px; height: auto;">
+</p>
 
-![Figura 6](./images/5.png)
-_Figura 6: Paso 3, Selección de la IP elástica_
+_Figura 4: Paso 2, Allocate Elastic IP Address_
 
-![Figura 7](./images/6.png)
-_Figura 7: Paso 4, Selección de la instancia_
+<p style="margin-bottom: 0px;">
+  <img src="./images/5.png" alt="Figura 5" width="100%" style="max-width: 1000px; height: auto;">
+</p>
 
-![Figura 8](./images/7.png)
-_Figura 8: Verificación de la asociación de la Ip elástica a la instancia A_
+_Figura 5: Paso 3, Selección de la IP elástica_
+
+<p style="margin-bottom: 0px;">
+  <img src="./images/6.png" alt="Figura 6" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
+_Figura 6: Paso 4, Selección de la instancia_
+
+<p style="margin-bottom: 0px;">
+  <img src="./images/7.png" alt="Figura 7" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
+_Figura 7: Verificación de la asociación de la Ip elástica a la instancia A_
 
 ## Tarea 3: Análisis de Direccionamiento IP en VPCs
 

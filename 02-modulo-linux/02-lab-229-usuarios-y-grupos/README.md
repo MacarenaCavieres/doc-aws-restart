@@ -48,7 +48,10 @@ sudo cat /etc/passwd | cut -d: -f1
 
 ### Creación de usuarios
 
-![Figura 1](./images/1.png)
+<p style="margin-bottom: 0px;">
+  <img src="./images/1.png" alt="Figura 1" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
 _Figura 1: Comandos para crear usuarios_
 
 ## Tarea 2: Creación e Integración de Grupos (`groupadd` & `usermod`)
@@ -67,8 +70,14 @@ sudo groupadd CEO
 
 ### Creación de grupos
 
-![Figura 2](./images/2.png)
-![Figura 3](./images/3.png)
+<p style="margin-bottom: 0px;">
+  <img src="./images/2.png" alt="Figura 2" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
+<p style="margin-bottom: 0px;">
+  <img src="./images/3.png" alt="Figura 3" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
 _Figura 2 y 3: Comandos para crear grupos y agregar un usuario al grupo_
 
 ### Matriz de Asignación de Usuarios a Grupos:
@@ -123,7 +132,10 @@ touch myFile.txt
 touch: cannot touch 'myFile.txt': Permission denied
 ```
 
-![Figura 4](./images/4.png)
+<p style="margin-bottom: 0px;">
+  <img src="./images/4.png" alt="Figura 4" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
 _Figura 4: Comandos para crear usuarios_
 
 _Demostración práctica del principio de mínimo privilegio en Linux: los usuarios estándar no tienen permisos de escritura en los directorios home ajenos._

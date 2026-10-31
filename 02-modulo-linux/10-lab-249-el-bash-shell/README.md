@@ -78,7 +78,10 @@ hello.sh
 # Salida: hello ec2-user
 ```
 
-![Figura 1](./images/1.png)
+<p style="margin-bottom: 0px;">
+  <img src="./images/1.png" alt="Figura 1" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
 _Figura 1: Captura de los comandos ejecutados_
 
 ## Resumen de comandos y sintaxis

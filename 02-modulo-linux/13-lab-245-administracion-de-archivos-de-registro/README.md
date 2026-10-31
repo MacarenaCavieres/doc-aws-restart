@@ -28,6 +28,12 @@ pwd
 sudo less /tmp/log/secure
 ```
 
+<p style="margin-bottom: 0px;">
+  <img src="./images/2.png" alt="Figura 1" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
+_Figura 1: Captura de pantalla con el comando less ejecutado_
+
 _Nota arquitectónica: En entornos de producción estándar de Linux (como RHEL o Amazon Linux), el archivo de registro seguro se ubica en la ruta `/var/log/secure`. En este laboratorio, se utilizó una copia de prueba localizada en `/tmp/log/secure`._
 
 ### Datos extraídos durante la inspección:
@@ -45,6 +51,12 @@ Se ejecutó la utilidad `lastlog` para inspeccionar la fecha y hora del último 
 # Consultar el ultimo inicio de sesion de todos los usuarios del sistema
 sudo lastlog
 ```
+
+<p style="margin-bottom: 0px;">
+  <img src="./images/1.png" alt="Figura 2" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
+_Figura 2: Capturra de pantalla para la tarea 2_
 
 ### Salida Esperada:
 

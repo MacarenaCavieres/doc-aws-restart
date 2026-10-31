@@ -67,6 +67,15 @@ def generate_global_readme():
     markdown_content.append("# AWS Hands-On Cloud & DevOps Portfolio\n\n")
     markdown_content.append(
         "[![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/) "
+        "[![CloudFormation](https://img.shields.io/badge/CloudFormation-FF4F00?style=for-the-badge&logo=awsmouth&logoColor=white)](https://aws.amazon.com/cloudformation/) "
+        "[![Amazon S3](https://img.shields.io/badge/Amazon%20S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white)](https://aws.amazon.com/s3/) "
+        "[![Amazon EC2](https://img.shields.io/badge/Amazon%20EC2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white)](https://aws.amazon.com/ec2/) "
+        "[![Amazon VPC](https://img.shields.io/badge/Amazon%20VPC-232F3E?style=for-the-badge&logo=amazonvpc&logoColor=white)](https://aws.amazon.com/vpc/) "
+        "[![AWS IAM](https://img.shields.io/badge/AWS%20IAM-DD344C?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/iam/) "
+        "[![CloudWatch](https://img.shields.io/badge/CloudWatch-FF4F00?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/cloudwatch/) "
+        "[![Lambda](https://img.shields.io/badge/AWS%20Lambda-FF9900?style=for-the-badge&logo=awslambda&logoColor=white)](https://aws.amazon.com/lambda/) "
+        "[![RDS](https://img.shields.io/badge/Amazon%20RDS-527FFF?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/rds/) "
+        "[![DynamoDB](https://img.shields.io/badge/DynamoDB-4053D6?style=for-the-badge&logo=amazondynamodb&logoColor=white)](https://aws.amazon.com/dynamodb/) "
         "[![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://www.kernel.org/) "
         "[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/) "
         "[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/) \n\n"
@@ -138,7 +147,6 @@ def generate_global_readme():
 
             markdown_content.append("\n")
 
-
     # --- STACK Y CONTACTO ---
     markdown_content.append("## Stack Tecnológico Dominado\n\n")
     markdown_content.append(
@@ -149,6 +157,7 @@ def generate_global_readme():
         "- **Bases de Datos & Lenguajes:** MySQL, SQL DQL/DDL/DML, Python 3, Boto3.\n\n"
     )
 
+  
     markdown_content.append("## Contacto & Enlaces\n\n")
     markdown_content.append(
         "- **LinkedIn:** Conectemos para colaborar o conocer más sobre mis proyectos en la nube [MacarenaCavieres](https://www.linkedin.com/in/macarena-cavieres-rubio/)\n"
@@ -159,7 +168,7 @@ def generate_global_readme():
     with open(output_path, "w", encoding="utf-8") as f:
         f.writelines(markdown_content)
 
-    print("¡README.md global con tablas descriptivas generado con éxito!")
+    print("¡README.md global con tablas descriptivas y badges actualizados generado con éxito!")
 
 
 if __name__ == "__main__":

@@ -91,7 +91,10 @@ date
 
 ## Imagen comandos de Linux
 
-![Figura 1](./images/1.png)
+<p style="margin-bottom: 0px;">
+  <img src="./images/1.png" alt="Figura 1" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
 _Figura 1: Comandos ejecutados en la shell de linux_
 
 ## Conclusiones y Aplicación Práctica

@@ -1,4 +1,4 @@
-# Lab-231 Editores de Texto en Linux Terminal: Vim y Nano
+# Lab 231 Editores de Texto en Linux Terminal: Vim y Nano
 
 ![Linux](https://img.shields.io/badge/OS-Amazon%20Linux%202023-orange?logo=amazon)
 ![Vim](https://img.shields.io/badge/Editor-Vim-019733?logo=vim&logoColor=white)
@@ -43,7 +43,10 @@ Flujo de Trabajo Realizado:
 vim helloworld
 ```
 
-![Figura 1](./images/1.png)
+<p style="margin-bottom: 0px;">
+  <img src="./images/1.png" alt="Figura 1" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
 _Figura 1: Vista de `vim`_
 
 2. Edición e Inserción:
@@ -92,7 +95,10 @@ A diferencia de Vim, Nano es un editor no modal donde el texto se puede ingresar
 nano cloudworld
 ```
 
-![Figura 2](./images/2.png)
+<p style="margin-bottom: 0px;">
+  <img src="./images/2.png" alt="Figura 2" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
 _Figura 2: Vista de `nano`_
 
 2. Edición: \

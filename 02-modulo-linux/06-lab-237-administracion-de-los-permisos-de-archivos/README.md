@@ -1,4 +1,4 @@
-# Lab-237 Permisos y Propiedad en Linux: Comandos `chown` y `chmod` (Modo Simbólico y Absoluto)
+# Lab 237 Permisos y Propiedad en Linux: Comandos `chown` y `chmod` (Modo Simbólico y Absoluto)
 
 ![Linux](https://img.shields.io/badge/OS-Amazon%20Linux%202023-orange?logo=amazon)
 ![Bash](https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnu-bash&logoColor=white)
@@ -8,8 +8,6 @@
 
 Este laboratorio práctico aborda la administración de seguridad en sistemas de archivos Linux mediante la asignación de propiedad de archivos/directorios (`chown`) a usuarios y grupos específicos, junto con el control de accesos mediante el comando `chmod`. Se ejercita la modificación de permisos utilizando tanto la notación simbólica (`u`, `g`, `o`, `a`) como la notación octal/absoluta (valores numéricos como `764`).
 
----
-
 ## Objetivos del Laboratorio
 
 - Modificar recursivamente la propiedad de usuario y grupo en estructuras de carpetas corporativas con `chown -R`.
@@ -17,8 +15,6 @@ Este laboratorio práctico aborda la administración de seguridad en sistemas de
 - Aplicar cambios de permisos con el **Modo Simbólico** (`chmod g+w`).
 - Aplicar cambios de permisos con el **Modo Absoluto/Octal** (`chmod 764`).
 - Verificar jerarquías de archivos, usuarios y grupos mediante `ls -l` y `ls -laR`.
-
----
 
 ## Tarea 1: Reasignación de Propiedad y Grupos (`chown`)
 
@@ -42,8 +38,13 @@ sudo chown -R mmajor:Finance HR/Finance
 ls -laR
 ```
 
-![Figura 1](./images/1.png)
-![Figura 2](./images/2.png)
+<p style="margin-bottom: 0px;">
+  <img src="./images/1.png" alt="Figura 1" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+<p style="margin-bottom: 0px;">
+  <img src="./images/2.png" alt="Figura 2" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
 _Figura 1 y 2: Comandos ejecutados para la reasignación de propiedad y grupos_
 
 ## Tarea 2: Modificación de Permisos (`chmod`)
@@ -93,7 +94,10 @@ ls -laR Shipping
 ls -laR Sales
 ```
 
-![Figura 3](./images/3.png)
+<p style="margin-bottom: 0px;">
+  <img src="./images/3.png" alt="Figura 3" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
 _Figura 3: Comandos ejecutados para la modificación de permisos y asignación departamental adicional_
 
 ## Resumen de Comandos y Sintaxis

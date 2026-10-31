@@ -61,7 +61,7 @@ Se verificaron las dependencias base de Python y se procedio con la instalacion 
 python3 --version
 
 # Descargar el paquete de instalacion oficial de AWS CLI v2
-curl "[https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip](https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip)" -o "awscliv2.zip"
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 
 # Descomprimir el archivo zip descargado
 unzip awscliv2.zip
@@ -104,13 +104,19 @@ Se ejecutó una consulta hacia la API de EC2 para obtener los atributos de la in
 
 ```bash
 # Describir los atributos del tipo de instancia en AWS EC2
-aws ec2 describe-instance-attribute --instance-id i-1234567890abcdefg --attribute instanceType
+aws ec2 describe-instance-attribute --instance-id <INSTANCE-ID> --attribute instanceType
 ```
 
-![Figura 1](./images/1.png)
+<p style="margin-bottom: 0px;">
+  <img src="./images/1.png" alt="Figura 1" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
 _Figura 1: Captura de la instancia con su instance ID_
 
-![Figura 2](./images/2.png)
+<p style="margin-bottom: 0px;">
+  <img src="./images/2.png" alt="Figura 2" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
 _Figura 2: Captura de la terminal con la instancia conectada_
 
 ## Resumen de Comandos y Sintaxis

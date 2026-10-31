@@ -33,7 +33,10 @@ hostname | tee file1.txt
 ls -l
 ```
 
-![Figura 1](./images/1.png)\
+<p style="margin-bottom: 0px;">
+  <img src="./images/1.png" alt="Figura 1" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
 _Figura 1: Captura de pantalla de los comandos tarea 1_
 
 ## Tarea 2: Creación, Ordenamiento y Filtrado de Datos (`cat`, `sort`, `grep`)
@@ -60,7 +63,10 @@ sort test.csv
 cat test.csv | grep Paris
 ```
 
-![Figura 2](./images/2.png)\
+<p style="margin-bottom: 0px;">
+  <img src="./images/2.png" alt="Figura 2" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
 _Figura 2: Captura de pantalla de los comandos tarea 2_
 
 ## Tarea 3: Extracción de Columnas con `cut`
@@ -103,7 +109,10 @@ Se utilizó el editor de flujo `sed` para reemplazar la primera ocurrencia de un
 sed 's/,/./' cities.csv test.csv
 ```
 
-![Figura 3](./images/3.png)\
+<p style="margin-bottom: 0px;">
+  <img src="./images/3.png" alt="Figura 3" width="100%" style="max-width: 1000px; height: auto;">
+</p>
+
 _Figura 3: Captura de pantalla comandos ejecutados tarea 3 y 4_
 
 ## Resumen de Comandos y Sintaxis
