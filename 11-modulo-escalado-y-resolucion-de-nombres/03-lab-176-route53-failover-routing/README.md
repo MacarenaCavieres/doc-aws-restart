@@ -124,6 +124,11 @@ _Figura 6: Sitio web de la cafetería mostrando la AZ `us-west-2b`_
 | **Amazon SNS**            | `Primary-Website-Health`              | Servicio de notificaciones que envía correos electrónicos de alerta al cambiar el estado del Health Check. |
 | **Route 53 Hosted Zone**  | `XXXXXX_XXXXXXXXXX.vocareum.training` | Zona DNS alojada que gestiona los registros de conmutación por error Principal y Secundario (`www`).       |
 
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=Ju3Tak4-le4)
+
 ## Conclusiones del Laboratorio
 
 - **Alta Disponibilidad Basada en DNS:** La implementación de políticas de conmutación por error en Route 53 permite desviar el tráfico de manera transparente hacia servidores de respaldo ante caídas de infraestructura.

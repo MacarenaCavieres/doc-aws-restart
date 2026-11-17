@@ -40,11 +40,9 @@ def extract_summary_from_readme(readme_path):
         
         if match:
             text = match.group(1).strip()
-            # Eliminar saltos de línea y formatear en un solo párrafo corto
             lines = [line.strip() for line in text.split("\n") if line.strip() and not line.startswith("!")]
             if lines:
                 summary = " ".join(lines)
-                # Limitar longitud para que la tabla no se deforme
                 return summary[:160] + "..." if len(summary) > 160 else summary
 
         # 2. Si no hay Descripción, intentar buscar el primer objetivo bullet point
@@ -58,6 +56,33 @@ def extract_summary_from_readme(readme_path):
         pass
 
     return "Documentación y arquitectura práctica del laboratorio."
+
+
+def extract_youtube_link_from_readme(readme_path):
+    """
+    Busca y extrae de forma flexible cualquier enlace de YouTube dentro del README.md.
+    """
+    if not os.path.exists(readme_path):
+        return None
+
+    try:
+        with open(readme_path, "r", encoding="utf-8") as f:
+            content = f.read()
+
+        # Expresión regular flexible para capturar URLs de YouTube
+        match = re.search(
+            r'(https?://(?:www\.)?(?:youtube\.com/watch\?v=|youtu\.be/)[^\s\)"\']+)',
+            content
+        )
+        if match:
+            url = match.group(1)
+            # Limpiar posibles caracteres finales no deseados
+            url = re.sub(r'[.,;?!]$', '', url)
+            return url
+    except Exception:
+        pass
+
+    return None
 
 
 def generate_global_readme():
@@ -122,9 +147,8 @@ def generate_global_readme():
         if not labs:
             markdown_content.append("*(No hay laboratorios registrados aún en este módulo.)*\n\n")
         else:
-            # Cabecera de la Tabla
-            markdown_content.append("| Estado / Laboratorio | Descripción General | Enlaces |\n")
-            markdown_content.append("| :--- | :--- | :---: |\n")
+            markdown_content.append("| Estado / Laboratorio | Descripción General | Documentación | Video |\n")
+            markdown_content.append("| :--- | :--- | :---: | :---: |\n")
 
             for lab in labs:
                 lab_path = os.path.join(mod_path, lab)
@@ -135,15 +159,26 @@ def generate_global_readme():
                     status = "✅"
                     link = f"./{mod}/{lab}/README.md"
                     summary = extract_summary_from_readme(lab_readme)
+                    yt_link = extract_youtube_link_from_readme(lab_readme)
+
                     lab_cell = f"{status} **[{lab_title}]({link})**"
-                    links_cell = f"[📄 Doc]({link})"
+                    doc_cell = f"[📄 Ver Doc]({link})"
+
+                    if yt_link:
+                        video_cell = f"[📺 Ver Video]({yt_link})"
+                    else:
+                        video_cell = "—"
+
                 else:
                     status = "⏳"
                     summary = "*Laboratorio en construcción...*"
                     lab_cell = f"{status} {lab_title}"
-                    links_cell = "—"
+                    doc_cell = "—"
+                    video_cell = "—"
 
-                markdown_content.append(f"| {lab_cell} | {summary} | {links_cell} |\n")
+                markdown_content.append(
+                    f"| {lab_cell} | {summary} | {doc_cell} | {video_cell} |\n"
+                )
 
             markdown_content.append("\n")
 
@@ -157,7 +192,6 @@ def generate_global_readme():
         "- **Bases de Datos & Lenguajes:** MySQL, SQL DQL/DDL/DML, Python 3, Boto3.\n\n"
     )
 
-  
     markdown_content.append("## Contacto & Enlaces\n\n")
     markdown_content.append(
         "- **LinkedIn:** Conectemos para colaborar o conocer más sobre mis proyectos en la nube [MacarenaCavieres](https://www.linkedin.com/in/macarena-cavieres-rubio/)\n"
@@ -168,7 +202,7 @@ def generate_global_readme():
     with open(output_path, "w", encoding="utf-8") as f:
         f.writelines(markdown_content)
 
-    print("¡README.md global con tablas descriptivas y badges actualizados generado con éxito!")
+    print("\n¡README.md global actualizado con éxito!")
 
 
 if __name__ == "__main__":

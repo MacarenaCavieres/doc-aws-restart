@@ -1,4 +1,4 @@
-# Lab-239 Monitoreo de Procesos y Automatización en Linux: `ps`, `top` y `crontab`
+# Lab 239 Monitoreo de Procesos y Automatización en Linux: `ps`, `top` y `crontab`
 
 ![Linux](https://img.shields.io/badge/OS-Amazon%20Linux%202023-orange?logo=amazon)
 ![Bash](https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnu-bash&logoColor=white)
@@ -106,6 +106,11 @@ _Figura 4: Verificación de las instrucciones crontab_
 | `top`     | `-hv`                     | Muestra la ayuda de opciones (`-h`) y la versión de la utilidad (`-v`).                                                       |
 | `crontab` | `-e` / `-l`               | **-e**: Edita la tabla de tareas programadas. **-l**: Lista las tareas programadas configuradas.                              |
 | `sed`     | `-e 's/origen/destino/g'` | Editor de flujo para reemplazar o transformar texto utilizando expresiones regulares.                                         |
+
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=G7MAC66cp0g)
 
 ## Aprendizajes Clave
 

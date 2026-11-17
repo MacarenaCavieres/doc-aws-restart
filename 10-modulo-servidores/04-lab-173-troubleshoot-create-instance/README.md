@@ -131,6 +131,11 @@ _Figura 5: Vista del sitio web. Apartado Order History con las órdenes activas_
 | **Seguridad de Red**   | `cafeSG`              | Grupo de seguridad configurado para permitir el acceso remoto por SSH (22) y el tráfico web (80).          |
 | **Herramienta de Red** | `nmap`                | Utilidad de código abierto empleada para realizar diagnósticos de puertos y conectividad de red.           |
 
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=qqGq9pQVMBE)
+
 ## Conclusiones del Laboratorio
 
 - **Automatización Programática:** El uso de la **AWS CLI** permite replicar despliegues complejos de infraestructura de forma consistente, reduciendo la intervención manual y minimizando errores de configuración.

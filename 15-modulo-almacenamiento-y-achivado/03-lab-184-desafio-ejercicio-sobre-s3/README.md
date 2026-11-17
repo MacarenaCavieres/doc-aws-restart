@@ -101,6 +101,11 @@ En este laboratorio de desafío se evaluaron y aplicaron los conceptos fundament
 | **AWS CLI**              | Perfil Configurado    | Herramienta de gestión programática para interactuar con las APIs de S3 y EC2.                           |
 | **Control de Acceso S3** | Permisos de Objeto    | Configuración aplicada para permitir la lectura y visualización pública de archivos específicos vía web. |
 
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=rhxuGhUTekc)
+
 ## Conclusiones del Laboratorio
 
 - **Administración de Almacenamiento Escalable:** Amazon S3 permite aprovisionar espacios de almacenamiento altamente duraderos y seguros de manera instantánea mediante la consola o la línea de comandos.

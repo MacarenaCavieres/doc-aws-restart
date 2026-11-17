@@ -94,6 +94,11 @@ _Figura 4: Captura de pantalla de los comandos del desafío_
 | **MySQL Engine**        | Base de Datos `world` | Base de datos relacional sobre la cual se ejecutaron las operaciones de filtrado y agregación.                 |
 | **MySQL Engine**        | Tabla `country`       | Tabla sobre la que se aplicaron filtros condicionales (`BETWEEN`, `LIKE`), funciones (`SUM`, `LOWER`) y alias. |
 
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=INK-OaSOHnA)
+
 ## Conclusiones del Laboratorio
 
 - **Expresividad y Lectura con `BETWEEN`:** El uso del operador `BETWEEN` simplifica la sintaxis en comparaciones de rango inclusivo en lugar de encadenar operadores `>=` y `<=` con `AND`.

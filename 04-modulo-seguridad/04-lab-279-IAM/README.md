@@ -1,4 +1,4 @@
-# Introducción a AWS Identity and Access Management (IAM)
+# Lab 279 Introducción a AWS Identity and Access Management (IAM)
 
 ![AWS IAM](https://img.shields.io/badge/Identity-AWS%20IAM-232F3E?logo=amazon-aws)
 ![Amazon EC2](https://img.shields.io/badge/Compute-Amazon%20EC2-FF9900?logo=amazon-aws)
@@ -100,6 +100,11 @@ _Figura 6: Validación de permisos del usuario user-2_
 | **AWS IAM**        | Managed Policies         | Políticas reusables diseñadas por AWS o administradores para aplicar a múltiples identidades.      |
 | **AWS IAM**        | Customer Inline Policies | Políticas de acceso embebidas directamente en un único usuario o grupo para casos específicos.     |
 | **AWS IAM**        | Account Password Policy  | Conjunto de reglas globales que exigen requisitos de complejidad y caducidad para las contraseñas. |
+
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=tD5HV4qxEx0)
 
 ## Conclusiones del Laboratorio
 

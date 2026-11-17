@@ -1,4 +1,4 @@
-# Lab-241 Gestión de Servicios Web (`httpd`) y Monitoreo de Recursos con `top` y AWS CloudWatch
+# Lab 241 Gestión de Servicios Web (`httpd`) y Monitoreo de Recursos con `top` y AWS CloudWatch
 
 ![Linux](https://img.shields.io/badge/OS-Amazon%20Linux%202-orange?logo=amazon)
 ![Bash](https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnu-bash&logoColor=white)
@@ -102,6 +102,11 @@ _Figura 3: Paneles de Cloudwatch_
 | `systemctl`     | `stop`        | Detiene la ejecución de un servicio en segundo plano.                               |
 | `top`           | Directa       | Muestra en tiempo real los procesos activos y métricas de CPU/RAM.                  |
 | `./script.sh &` | `&`           | Ejecuta un comando o script en segundo plano (_background_), liberando la terminal. |
+
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=JbCYbfyTonQ)
 
 ## Aprendizajes Clave
 

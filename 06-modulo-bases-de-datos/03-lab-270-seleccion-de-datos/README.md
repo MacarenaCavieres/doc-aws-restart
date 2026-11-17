@@ -120,6 +120,11 @@ _Figura 6: Captura de pantalla de los comandos del desafío_
 | **MySQL Engine**        | Base de Datos `world` | Base de datos relacional utilizada para la ejecución de consultas DQL (_Data Query Language_). |
 | **MySQL Engine**        | Tabla `country`       | Tabla sobre la cual se aplicaron proyecciones, alias, ordenamientos y filtros lógicos.         |
 
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=djZCRbOmph0)
+
 ## Conclusiones del Laboratorio
 
 - **Optimización de Consultas de Lectura:** La proyección explícita de columnas sobre un conjunto de datos previene el sobrecoste de transferencia asociado al uso indistinto de `SELECT *`.

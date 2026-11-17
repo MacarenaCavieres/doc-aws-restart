@@ -100,6 +100,11 @@ _Figura 8: Detalles de la instancia con la IP Elástica luego de detenerla y rei
 | `Private IPv4 Address`    | Estática dentro de la VPC | Dirección de red interna que no cambia durante el ciclo de vida de la instancia.   |
 | `ENI (Network Interface)` | Mapeo de Red              | Interfaz virtual a la cual se vincula la dirección IP Elástica.                    |
 
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=u1Mx79j8J9s)
+
 ## Conclusiones del Laboratorio
 
 - **Resolución del Problema:** La asignación de una IP Elástica resuelve el problema del cliente, permitiendo detener la instancia para ahorrar costos de cómputo sin perder la dirección de acceso pública.

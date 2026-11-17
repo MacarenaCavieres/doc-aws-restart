@@ -140,6 +140,11 @@ _Figura 5: Instancias del scaling group inicializándose_
 | **Launch Template**    | `web-app-launch-template`    | Plantilla estándar utilizada para definir la configuración base de las instancias del ASG.            |
 | **Auto Scaling Group** | `Web App Auto Scaling Group` | Clúster elástico configurado para mantener entre 2 y 4 nodos en subredes privadas con escala por CPU. |
 
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=LR25aExSs80)
+
 ## Conclusiones del Laboratorio
 
 - **Automatización Integral:** El uso combinado de scripts de inicialización (`UserData`) y comandos de la **AWS CLI** permite aprovisionar y parametrizar infraestructura de forma rápida y repetible.

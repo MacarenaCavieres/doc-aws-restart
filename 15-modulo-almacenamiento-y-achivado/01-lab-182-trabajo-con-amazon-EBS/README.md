@@ -125,6 +125,11 @@ _Figura 3: Detalles de la snapshot `My Snapshot`_
 | **Amazon EBS Snapshot**     | `My Snapshot`         | Instantánea de respaldo de los bloques en uso del volumen, almacenada de forma duradera.                    |
 | **Amazon EBS (Restaurado)** | `Restored Volume`     | Nuevo volumen de almacenamiento clonado directamente a partir de la instantánea para recuperación de datos. |
 
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=6htiWfElBIs)
+
 ## Conclusiones del Laboratorio
 
 - **Gestión de Almacenamiento en Bloque:** Amazon EBS simplifica el aprovisionamiento de discos virtuales escalables que pueden asociarse de forma dinámica a instancias EC2 según las necesidades de la aplicación.

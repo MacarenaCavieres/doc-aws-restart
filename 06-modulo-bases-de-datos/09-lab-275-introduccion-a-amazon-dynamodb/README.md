@@ -148,6 +148,11 @@ Depuración limpia de recursos para finalizar el laboratorio:
 | **DynamoDB Item 2** | _John Lennon - Imagine_        | Elemento que integra el atributo adicional `Genre` (String), demostrando flexibilidad de datos.                                      |
 | **DynamoDB Item 3** | _Psy - Gangnam Style_          | Elemento con el atributo adicional `LengthSeconds` (Number) y actualización de `Year` a 2012.                                        |
 
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=jFlTwBAn72A)
+
 ## Conclusiones del Laboratorio
 
 - **Flexible y Sin Esquema (Schema-less):** DynamoDB permite que cada elemento dentro de la misma tabla posea un conjunto distinto de atributos sin requerir modificaciones estructurales en la tabla, permitiendo una gran agilidad en la evolución del modelo de datos.

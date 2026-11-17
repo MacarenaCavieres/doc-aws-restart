@@ -108,6 +108,11 @@ En este laboratorio se implementó una estrategia integral de observabilidad, mo
 | **CloudWatch Events**   | `Instance_Stopped_Terminated`      | Motor de reglas orientado a eventos para capturar y reportar modificaciones operativas en el ciclo de vida de los servidores EC2.                   |
 | **AWS Config**          | Reglas de Conformidad              | Servicio de gobernanza para auditar políticas de etiquetado obligatorio (`required-tags`) y uso correcto de discos EBS (`ec2-volume-inuse-check`).  |
 
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=dFZ5J3A7oXM)
+
 ## Conclusiones del Laboratorio
 
 - **Observabilidad Sistémica Unificada:** La integración de Systems Manager con el agente de CloudWatch simplifica drásticamente la estandarización y recolección centralizada de métricas de rendimiento y logs de múltiples servidores de forma automatizada.

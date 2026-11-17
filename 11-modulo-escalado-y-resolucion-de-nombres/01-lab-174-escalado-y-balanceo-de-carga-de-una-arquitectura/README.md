@@ -175,6 +175,11 @@ Para completar este desafío de manera programática:
 | **Launch Template**    | `lab-app-launch-template` | Plantilla estándar utilizada por el ASG para definir tipo de instancia, AMI y seguridad.      |
 | **Auto Scaling Group** | `Lab Auto Scaling Group`  | Grupo elástico configurado para mantener entre 2 y 4 instancias en subredes privadas.         |
 
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=eINezX_nN6A)
+
 ## Conclusiones del Laboratorio
 
 - **Alta Disponibilidad mediante ELB:** La utilización de un Application Load Balancer desacopla el tráfico de los clientes de las instancias individuales, asegurando que las fallas de nodos específicos no interrumpan el servicio.

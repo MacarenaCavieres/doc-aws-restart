@@ -152,6 +152,11 @@ _Figura 6: Validación: Se estableció la conexión SSH exitosamente y al ejecut
 | **Tablas de Enrutamiento** | `VPC1PubRouteTableId`        | Tabla de rutas corregida mediante la inserción de una ruta predeterminada hacia el Internet Gateway.        |
 | **Amazon EC2 / CLI Host**  | Instancia de Apoyo           | Servidor de comandos utilizado para ejecutar la AWS CLI y herramientas de diagnóstico como `nmap` y `grep`. |
 
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=Ca4sWMefF8c)
+
 ## Conclusiones del Laboratorio
 
 - **Diagnóstico Basado en CLI:** El uso de la interfaz de línea de comandos de AWS permite realizar auditorías profundas y modificaciones precisas en la infraestructura de red sin depender de la consola gráfica.

@@ -110,6 +110,11 @@ Respecto a la consulta técnica sobre utilizar un rango de IP público (ejemplo 
 | `AWS VPC`          | IPv4 CIDR Block     | Rango de direcciones de red privadas asignadas a la VPC bajo el estándar RFC 1918.        |
 | `Internet Gateway` | IGW                 | Componente de VPC que realiza la traducción de direcciones entre IP privada y pública.    |
 
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=x01lHGwAUbQ)
+
 ## Conclusiones del Laboratorio
 
 - **Requisito de IP Pública:** Un Internet Gateway solo puede enrutar tráfico hacia y desde instancias que posean una IP pública asignada o una IP Elástica asociada.

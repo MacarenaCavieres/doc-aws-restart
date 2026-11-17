@@ -245,6 +245,11 @@ _Figura 6: Ejecución del comando `./update-website.sh` despues de agregar el co
 | **AWS SSM**        | `Session Manager`          | Mecanismo de conexión remota interactiva basado en navegador hacia la instancia EC2.                     |
 | **Script Bash**    | `update-website.sh`        | Automatización local que utiliza `aws s3 sync` para transferir únicamente archivos modificados hacia S3. |
 
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=FrZo18qOXVM)
+
 ## Conclusiones del Laboratorio
 
 - **Alojamiento Servidor / Serverless:** Amazon S3 proporciona una solución altamente disponible y rentable para alojar sitios web estáticos sin necesidad de administrar servidores web tradicionales como Apache o Nginx.

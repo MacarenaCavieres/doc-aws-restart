@@ -217,6 +217,11 @@ En este laboratorio se implementó una estrategia de **Infraestructura como Cód
 | **Amazon S3**          | Bucket S3 dinámico        | Almacén de objetos añadido de forma incremental mediante la actualización directa de la plantilla YAML.                 |
 | **Amazon EC2 & SSM**   | `App Server` (`t3.micro`) | Instancia de cómputo vinculada a subredes y grupos de seguridad mediante referencias `!Ref` y AMIs dinámicas de SSM.    |
 
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=Iz1MXLz6pEg)
+
 ## Conclusiones del Laboratorio
 
 - **Automatización Fiable (IaC):** AWS CloudFormation elimina los errores humanos asociados al aprovisionamiento manual mediante la estricta definición declarativa de la infraestructura en código YAML.

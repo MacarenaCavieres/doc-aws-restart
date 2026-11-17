@@ -135,6 +135,11 @@ _Figura 4: Vista de la terminal conectada al `Bastion Server` y la conexión en 
 | **Tablas de Enrutamiento** | `Public RT` & `Private RT`         | Tablas que rigen el direccionamiento del tráfico de red hacia el IGW y la NAT Gateway.                               |
 | **Amazon EC2**             | `Bastion Server`                   | Instancia de salto desplegada en la subred pública para control de accesos administrativos.                          |
 
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=YakNR7vWXZ4)
+
 ## Conclusiones del Laboratorio
 
 - **Aislamiento y Seguridad de Red:** La separación lógica en subredes públicas y privadas mediante Amazon VPC permite proteger los recursos de bases de datos y backends críticos frente a exposiciones directas en internet.

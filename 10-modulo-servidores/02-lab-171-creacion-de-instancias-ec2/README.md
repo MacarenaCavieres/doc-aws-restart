@@ -169,6 +169,11 @@ _Figura 5: Vista del navegador donde carga el servidor de Apache_
 | **SSM Parameter Store** | `/aws/service/ami-amazon-linux-latest/...`    | Ruta pública de Parameter Store consultada para extraer de forma dinámica el ID de la AMI más reciente.       |
 | **Security Groups**     | `Bastion security group` / `WebSecurityGroup` | Firewalls virtuales que regulan el acceso SSH (puerto 22) e interacción web HTTP (puerto 80) respectivamente. |
 
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=pAI1jDF7bvA)
+
 ## Conclusiones del Laboratorio
 
 - **Consola vs. CLI para Despliegues:** La consola gráfica es adecuada para lanzamientos únicos o de prueba, mientras que el uso de **AWS CLI** e **Infraestructura como Código (IaC)** garantiza procesos repetibles, minimizando errores humanos en entornos de producción.

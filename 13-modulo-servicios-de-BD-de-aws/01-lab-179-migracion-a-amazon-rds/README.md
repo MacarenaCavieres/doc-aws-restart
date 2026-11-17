@@ -190,6 +190,11 @@ _Figura 8: Métrica de `DatabaseConnections` de Cloudwatch_
 | **Security Group**       | `CafeDatabaseSG`            | Cortafuegos que restringe el acceso a la base de datos exclusivamente al puerto `3306` desde la aplicación.     |
 | **Amazon CloudWatch**    | Métricas RDS                | Sistema de telemetría que recopila métricas de rendimiento y conexiones de base de datos por minuto.            |
 
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=ra3VaR97Ngg)
+
 ## Conclusiones del Laboratorio
 
 - **Administración Eficientizada:** La utilización de Amazon RDS elimina la necesidad de realizar mantenimiento operativo a nivel de sistema operativo en las bases de datos relacionales, delegando tareas como respaldos automatizados y alta disponibilidad.

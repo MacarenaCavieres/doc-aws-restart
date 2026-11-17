@@ -179,6 +179,11 @@ La solución implementada en este laboratorio establece una arquitectura segura 
 | **Automatización de Eventos** | `s3EventNotification.json`              | Archivo de reglas vinculado al bucket para disparar alertas exclusivamente ante eventos de creación y eliminación en `images/`. |
 | **Amazon EC2**                | Instancia `CLI Host`                    | Servidor Linux de apoyo utilizado para ejecutar comandos avanzados de la AWS CLI (`s3` y `s3api`).                              |
 
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=6t8nX-AOTpI)
+
 ## Conclusiones del Laboratorio
 
 - **Control de Acceso Basado en Identidad (IAM):** El uso estructurado de grupos y políticas adaptadas a prefijos específicos permite delegar operaciones de almacenamiento a terceros de forma totalmente segura y auditada.

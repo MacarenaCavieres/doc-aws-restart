@@ -114,6 +114,11 @@ _Figura 5: Comandos ejecutados en la CLI de la tarrea 4_
 | **Parameter Store**     | `/dashboard/show-beta-features` | Parámetro clave-valor utilizado para activar banderas de características (_feature flags_) en la aplicación.          |
 | **Session Manager**     | `Session Manager Shell`         | Entorno de consola SSH-like seguro que opera mediante túneles cifrados sin abrir el puerto `22`.                      |
 
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=WYUDNNpXGes)
+
 ## Conclusiones del Laboratorio
 
 - **Eliminación del Acceso SSH Tradicional:** **Session Manager** ofrece acceso shell auditado mediante AWS Identity and Access Management (IAM) e integrado con AWS CloudTrail, reduciendo la superficie de ataque al no requerir puertos de entrada abiertos (`22`).

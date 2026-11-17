@@ -255,6 +255,11 @@ _Figura 3: Página web del desafío_
 | **Security Group**   | `SG-challenge`            | Firewall virtual configurado con reglas de entrada en los puertos 22 (SSH) y 80 (HTTP).          |
 | **Amazon EC2**       | `challenge web server`    | Instancia `t3.micro` con disco `gp2` y servidor Apache aprovisionado dinámicamente mediante DNF. |
 
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=qNHhoI98cgI)
+
 ## Conclusiones del Laboratorio
 
 - **Segmentación Personalizada de Red:** La creación de bloques CIDR específicos (`/18` para VPC y `/26` para subredes) demuestra el control preciso sobre el espacio de direcciones IP en arquitecturas de nube.

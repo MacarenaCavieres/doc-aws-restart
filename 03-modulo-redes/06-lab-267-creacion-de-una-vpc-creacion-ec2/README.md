@@ -163,6 +163,11 @@ _Figura 5: Validación web server_
 | **Security Group**   | `Web Security Group`                    | Controla el tráfico entrante por el puerto 80 TCP.            |
 | **Amazon EC2**       | `Web Server 1`                          | Instancia EC2 que aloja el servidor web Apache y la app PHP.  |
 
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=yuf3B1ov4Zg)
+
 ## Conclusiones del Laboratorio
 
 - **Diseño Multi-AZ**: La distribución de subredes públicas y privadas en múltiples zonas de disponibilidad establece la base estructural para arquitecturas de alta disponibilidad y tolerancia a fallos.

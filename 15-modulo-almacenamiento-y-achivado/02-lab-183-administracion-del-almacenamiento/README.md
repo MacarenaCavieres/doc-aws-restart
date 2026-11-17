@@ -139,6 +139,11 @@ En este laboratorio se profundizó en la administración avanzada de datos en vo
 | **Automatización Linux** | `cron` & `snapshotter_v2.py` | Gestor de tareas programadas y script de depuración para retener exclusivamente las dos instantáneas más recientes. |
 | **Amazon EC2**           | `Command Host` & `Processor` | Instancias de control y procesamiento utilizadas para la ejecución de comandos CLI y pruebas de almacenamiento.     |
 
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=ia5zCmoWpJQ)
+
 ## Conclusiones del Laboratorio
 
 - **Automatización de Respaldos:** La combinación de la AWS CLI, herramientas del sistema como `cron` y scripts programados permite mantener políticas de respaldo eficientes y controladas en volúmenes EBS.

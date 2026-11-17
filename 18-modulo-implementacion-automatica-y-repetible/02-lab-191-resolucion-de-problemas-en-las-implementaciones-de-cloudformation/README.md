@@ -358,6 +358,11 @@ En este laboratorio avanzado se abordaron técnicas de diagnóstico, depuración
 | **Amazon EC2 & Cloud-Init** | `Web Server`              | Instancia de cómputo utilizada para analizar logs de inicialización (`cloud-init-output.log` y scripts `part-001`). |
 | **AWS Drift Detection**     | Auditoría de Desviaciones | Mecanismo de control para identificar cambios manuales no documentados en los recursos de la pila.                  |
 
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=XtsqO8pDhw0)
+
 ## Conclusiones del Laboratorio
 
 - **Depuración Efectiva en IaC:** El uso de parámetros como `--on-failure DO_NOTHING` resulta esencial para conservar entornos defectuosos y realizar análisis forenses profundos sobre los registros del sistema operativo huésped.

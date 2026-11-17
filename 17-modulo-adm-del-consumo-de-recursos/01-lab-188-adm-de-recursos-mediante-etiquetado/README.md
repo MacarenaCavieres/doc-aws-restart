@@ -136,6 +136,11 @@ En este laboratorio se implementó una estrategia integral de administración, c
 | **AWS SDK para PHP**        | Scripts `stopinator.php` y `terminate-instances.php` | Herramientas de automatización programática para la gestión del ciclo de seguridad y energía de la infraestructura.     |
 | **Políticas de Etiquetado** | `Project`, `Environment`, `Version`                  | Metadatos clave utilizados para la clasificación lógica, filtrado y gobernanza automatizada de los recursos en la nube. |
 
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=Cnr0y9Hdjic)
+
 ## Conclusiones del Laboratorio
 
 - **Poder del Etiquetado Estructurado:** Las etiquetas de AWS no solo sirven para organizar costos, sino que actúan como metadatos críticos para la automatización operativa a escala.

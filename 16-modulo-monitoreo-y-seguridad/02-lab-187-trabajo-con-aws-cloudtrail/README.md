@@ -231,6 +231,11 @@ En esta actividad de investigación forense y seguridad en la nube, se simuló u
 | **Amazon EC2 & Security Groups** | `Café Web Server`                | Instancia de cómputo y grupo de seguridad vulnerado y posteriormente asegurado mediante endurecimiento SSH y limpieza de reglas.   |
 | **AWS IAM**                      | Usuario `chaos-user`             | Entidad de seguridad identificada como el origen del acceso no autorizado y eliminada durante la respuesta al incidente.           |
 
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=bnqC6ubZ8_A)
+
 ## Conclusiones del Laboratorio
 
 - **Importancia de la Auditoría Continua:** La habilitación temprana de AWS CloudTrail resulta indispensable para realizar análisis forenses precisos y reconstruir la cronología exacta de eventos tras una brecha de seguridad.

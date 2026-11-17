@@ -110,6 +110,11 @@ _Figura 3: Comandos ejecutados para la modificación de permisos y asignación d
 | `ls`         | `-laR`            | Lista en formato largo (`-l`), archivos ocultos (`-a`) de forma recursiva (`-R`).                           |
 | `vi` / `vim` | Directa           | Editor de texto en terminal para crear y modificar archivos del sistema.                                    |
 
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=ivS0ZlRsWD8)
+
 ## Aprendizajes Clave
 
 - **Estructura `chown usuario:grupo`**: Permite cambiar el propietario y el grupo de un directorio en un solo comando.

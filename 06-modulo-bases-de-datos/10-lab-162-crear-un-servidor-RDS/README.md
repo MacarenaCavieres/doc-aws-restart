@@ -191,6 +191,11 @@ _Figura 6: Creación tabla `Cloud_Practitioner`, inserción de datos e `INNER JO
 | **Tabla DDL 1**        | `RESTART`                | Tabla relacional para registrar datos demográficos y fechas de graduación de estudiantes.                           |
 | **Tabla DDL 2**        | `CLOUD_PRACTITIONER`     | Tabla relacional para almacenar las fechas de obtención de la certificación Cloud Practitioner.                     |
 
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=jYjOYy7WKU0)
+
 ## Conclusiones del Laboratorio
 
 - **Administración Simplificada:** Amazon RDS automatiza la gestión de la infraestructura subyacente, el aprovisionamiento del SO y los parches de seguridad, permitiendo enfocar los esfuerzos exclusivamente en el diseño del modelo de datos y las consultas SQL.

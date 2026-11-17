@@ -142,6 +142,11 @@ _Figura 5: Correos del conteo de las palabras de los archivos cargados a S3_
 | **Amazon SNS**     | Tema de Notificaciones        | Servicio de mensajería encargado de distribuir los resultados del conteo vía correo electrónico. |
 | **IAM Role**       | `LambdaAccessRole`            | Rol de seguridad con políticas integradas para S3, SNS, CloudWatch Logs y ejecución de Lambda.   |
 
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=D3g--Pi49c0)
+
 ## Conclusiones del Laboratorio
 
 - **Automatización Basada en Eventos:** La integración nativa entre Amazon S3 y AWS Lambda permite desencadenar flujos de procesamiento de datos de manera instantánea ante la llegada de nuevos archivos.

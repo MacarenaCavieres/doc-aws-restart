@@ -132,7 +132,10 @@ _Figura 1: Función lambda `salesAnalysisReportDataExtractor`_
 | **Amazon SNS**         | `salesAnalysisReportTopic`         | Tema estándar encargado de enrutar y entregar las notificaciones por correo electrónico.          |
 | **Amazon EventBridge** | `salesAnalysisReportDailyTrigger`  | Desencadenador basado en expresiones Cron para la ejecución automatizada del informe.             |
 
----
+## Evidencia en Video
+
+Mira la ejecución de este laboratorio paso a paso en mi canal de YouTube: \
+[![Ver Video en YouTube](https://img.shields.io/badge/YouTube-Ver_Laboratorio_Práctico-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=1h3xE-uREFg)
 
 ## Conclusiones del Laboratorio
 
